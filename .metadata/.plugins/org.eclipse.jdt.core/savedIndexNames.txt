@@ -1,5 +1,0 @@
-INDEX VERSION 1.126+/home/buzz/workspace/android/.metadata/.plugins/org.eclipse.jdt.core
-1449396053.index
-4172783677.index
-1917272658.index
-2667680890.index

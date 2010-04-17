@@ -1,7 +1,0 @@
-package com.basior.learning.CustomList;
-
-import android.widget.ArrayAdapter;
-
-public class CustomArrayAdapter<T> {
-
-}
