@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:id="@+id/RelativeLayout01" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"><EditText android:text="@+id/EditText01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:visibility="invisible" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:id="@+id/Invisible"></EditText><TextView android:id="@+id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:text="Login:" android:layout_alignParentTop="false" android:layout_alignBaseline="@id/Invisible"></TextView>
+<EditText android:layout_height="wrap_content" android:id="@+id/UserText" android:layout_toRightOf="@id/TextView01" android:layout_width="fill_parent" android:layout_alignBaseline="@id/TextView01" android:inputType="text|textPersonName" android:hint="Type your name here"></EditText>
+<EditText android:layout_height="wrap_content" android:id="@+id/PassText" android:layout_width="fill_parent" android:layout_below="@id/UserText" android:layout_alignLeft="@id/UserText" android:inputType="textPassword" android:hint="Password"></EditText>
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/Ok" android:text="OK" android:layout_below="@id/PassText" android:layout_alignRight="@id/PassText" android:layout_alignParentRight="false"></Button>
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/Cancel" android:text="Cancel" android:layout_toLeftOf="@id/Ok" android:layout_alignTop="@id/Ok"></Button>
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<ImageButton android:id="@+id/ImageButton01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon" android:layout_alignParentLeft="false" android:layout_centerVertical="true"></ImageButton>
+<View android:id="@+id/View01" android:layout_height="fill_parent" android:background="#ff0000" android:layout_toRightOf="@id/ImageButton01" android:layout_width="10px"></View><TextView android:text="@+id/TextView01" android:id="@+id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/View01" android:layout_centerVertical="true"></TextView><CheckBox android:id="@+id/CheckBox01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_vertical|center_horizontal" android:layout_alignParentRight="true" android:layout_centerVertical="true"></CheckBox>
+
+<View android:id="@+id/View02" android:layout_height="fill_parent" android:layout_width="2px" android:background="#00ff00" android:layout_toLeftOf="@id/CheckBox01"></View>
+
+
+</RelativeLayout>
