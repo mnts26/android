@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.delete.line",1271456601911
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.file.save",1271456603168
+activated,view,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.PackageExplorer",1271456604583
+activated,editor,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1271456607460
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.delete.line",1271456610246
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.delete.line",1271456611677
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.delete.line",1271456613641
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.file.save",1271456615989
+activated,view,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.PackageExplorer",1271456617168
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271456621103
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.file.export",1271456636913
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.file.export",1271456636913
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271456636986
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271456645422
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271456666690
+started,bundle,org.eclipse.wst.ws.service.policy,1.0.103.v200905151848,"org.eclipse.wst.ws.service.policy",1271456670293
+started,bundle,org.eclipse.wst.command.env,1.0.408.v200903110045,"org.eclipse.wst.command.env",1271456670345
+started,bundle,org.eclipse.wst.ws,1.1.103.v200903111822,"org.eclipse.wst.ws",1271456670375
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271456671922
+started,bundle,org.eclipse.ui.externaltools,3.2.0.v20090504,"org.eclipse.ui.externaltools",1271456675090
+error,log,,,"Internal Error",1271456698630
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.file.properties",1271456698681
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271456698763
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271456699363
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271456699583

@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.text.contentAssist.proposals",1271456080696
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.goto.lineEnd",1271456086422
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.delete",1271456096509
+executed,command,com.motorola.studio.android.launch,1.1.0.release,"com.motorola.studio.android.launch.android.app.run",1271456103026
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271456103245
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271456104501
+run,application_management,com.motorola.studio.android.launch,1.1.0.release,"device=emulator|use_vdl=n|prj_target=Android 2.0.1|target=Android 2.0.1",1271456104852
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271456112259
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271456124565
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1271456124619
+activated,editor,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1271456145292
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.goto.lineEnd",1271456160684
+executed,command,com.motorola.studio.android.launch,1.1.0.release,"com.motorola.studio.android.launch.android.app.run",1271456163664
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271456163949
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271456165281
+run,application_management,com.motorola.studio.android.launch,1.1.0.release,"device=emulator|use_vdl=n|prj_target=Android 2.0.1|target=Android 2.0.1",1271456165643
+executed,command,com.motorola.studio.android.launch,1.1.0.release,"com.motorola.studio.android.launch.android.app.run",1271456171303
+run,application_management,com.motorola.studio.android.launch,1.1.0.release,"device=emulator|use_vdl=n|prj_target=Android 2.0.1|target=Android 2.0.1",1271456171319
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271456178040
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271456195192
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271456205263
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271456235437
+activated,editor,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1271456245825
+activated,editor,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1271456251502
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.text.contentAssist.proposals",1271456265041

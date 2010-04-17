@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+error,log,,,"The selected resource cannot be launched.",1271023100247
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271023100272
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271023103329
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271023104956
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271023105776
+executed,command,com.motorola.studio.android.launch,1.1.0.release,"com.motorola.studio.android.launch.android.app.run",1271023108986
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271023111967
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271023126341
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.text.contentAssist.proposals",1271023133401
+activated,editor,com.android.ide.eclipse.adt,0.9.6.v201003030054_MOTODEV,"com.android.ide.eclipse.editors.layout.LayoutEditor",1271023140971
+activated,editor,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1271023142325
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271023143294
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271023147111
+started,emulator,com.motorola.studio.android.emulator.service.start,0.5.0.release,"target=Android 2.0.1",1271023147796
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271023147892
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271023151494
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271023152359
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271023153725
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.goto.lineEnd",1271023155992
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.text.contentAssist.proposals",1271023159006
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.text.contentAssist.proposals",1271023162251
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.text.contentAssist.proposals",1271023167773
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.text.contentAssist.proposals",1271023170180
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.goto.wordPrevious",1271023180658
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.goto.wordPrevious",1271023180856

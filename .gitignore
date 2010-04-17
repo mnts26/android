@@ -1,0 +1,5 @@
+# ignored files for android
+*.dex
+*.ap_
+*.class
+

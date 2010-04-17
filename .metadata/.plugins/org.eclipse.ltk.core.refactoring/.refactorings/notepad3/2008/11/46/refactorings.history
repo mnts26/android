@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;mNotesCursor&apos; in &apos;com.android.demo.notepad3.Notepadv3.fillData()&apos; to &apos;NotesCursor&apos;&#x0A;- Original project: &apos;notepad3&apos;&#x0A;- Original element: &apos;com.android.demo.notepad3.Notepadv3.fillData().mNotesCursor&apos;&#x0A;- Renamed element: &apos;mNotesCursor&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;mNotesCursor&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;com.android.demo.notepad3{Notepadv3.java[Notepadv3~fillData@mNotesCursor!1660!1707!1667!1678!QCursor;" name="NotesCursor" references="true" stamp="1226851758582" version="1.0"/>
+</session>

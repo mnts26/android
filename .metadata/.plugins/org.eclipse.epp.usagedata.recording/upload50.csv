@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,com.motorola.studio.android.emulator.service.stop,0.5.0.release,"com.motorola.studio.android.emulator.service.stop",1271020434240
+error,log,,,"Failed to load properties file for project 'Notepad3sol'",1271020434249
+error,log,,,"Failed to load properties file for project 'Notepad3sol'",1271020434251
+error,log,,,"Failed to load properties file for project 'Notepad3sol'",1271020434327
+error,log,,,"Failed to load properties file for project 'buzz1'",1271020434329
+error,log,,,"Failed to load properties file for project 'buzz1'",1271020434332
+error,log,,,"Failed to load properties file for project 'buzz1'",1271020434357
+error,log,,,"Failed to load properties file for project 'notepad3'",1271020434358
+error,log,,,"Failed to load properties file for project 'notepad3'",1271020434360
+error,log,,,"Failed to load properties file for project 'notepad3'",1271020434406
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271020435789
+activated,view,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.PackageExplorer",1271020438093
+activated,editor,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1271020438094
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271020440362
+started,bundle,org.eclipse.wst.jsdt.manipulation,1.0.100.v200809240707,"org.eclipse.wst.jsdt.manipulation",1271020443717
+started,bundle,org.eclipse.wst.jsdt.core,1.0.201.v2010012803,"org.eclipse.wst.jsdt.core",1271020443826
+started,bundle,org.eclipse.wst.jsdt.ui,1.0.201.v2010012803,"org.eclipse.wst.jsdt.ui",1271020443952
+closed,editor,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1271020444404
+started,bundle,org.eclipse.wst.sse.core,1.1.402.v201001251516,"org.eclipse.wst.sse.core",1271020444544
+started,bundle,org.eclipse.gef,3.5.1.v20090910-2020,"org.eclipse.gef",1271020444544
+started,bundle,org.eclipse.draw2d,3.5.2.v20091126-1908,"org.eclipse.draw2d",1271020444604
+error,log,,,"Unable to create editor ID com.android.ide.eclipse.editors.layout.LayoutEditor: An unexpected exception was thrown.",1271020444824
+opened,editor,com.android.ide.eclipse.adt,0.9.6.v201003030054_MOTODEV,"com.android.ide.eclipse.editors.layout.LayoutEditor",1271020444896
+opened,editor,com.android.ide.eclipse.adt,0.9.6.v201003030054_MOTODEV,"com.android.ide.eclipse.editors.layout.LayoutEditor",1271020444904
+closed,editor,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1271020444917

@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271095852815
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1271095872075
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271095874724
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271095903592
+activated,editor,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1271095903718
+executed,command,com.motorola.studio.android.launch,1.1.0.release,"com.motorola.studio.android.launch.android.app.run",1271095907312
+run,application_management,com.motorola.studio.android.launch,1.1.0.release,"device=handset|use_vdl=n|prj_target=Android 2.0.1",1271095907326
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271095907465
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271095910461
+opened,view,com.android.ide.eclipse.ddms,0.9.6.v201003030054_MOTODEV,"com.android.ide.eclipse.ddms.views.LogCatView",1271095946992
+activated,view,com.android.ide.eclipse.ddms,0.9.6.v201003030054_MOTODEV,"com.android.ide.eclipse.ddms.views.LogCatView",1271095947070
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271097238084
+started,bundle,org.eclipse.wst.xsl.debug.ui,1.0.0.v200904240436,"org.eclipse.wst.xsl.debug.ui",1271097442901
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271097969432
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271097969666
+closed,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271097971599
+stopped,bundle,biz.junginger.rss.eclipse.RssPlugin,1.5.0,"biz.junginger.rss.eclipse.RssPlugin",1271097972086
+stopped,bundle,com.motorola.studio.android.application.store,1.2.0.release,"com.motorola.studio.android.application.store",1271097972106
+stopped,bundle,com.motorola.studio.android.db,1.2.0.release,"com.motorola.studio.android.db",1271097972106
+stopped,bundle,com.motorola.studio.android.device.service.console,1.1.0.release,"com.motorola.studio.android.device.service.console",1271097972106
+stopped,bundle,com.motorola.studio.android.emulator.service.lang,0.5.0.release,"com.motorola.studio.android.emulator.service.lang",1271097972106
+stopped,bundle,com.motorola.studio.android.emulator.service.reset,0.5.0.release,"com.motorola.studio.android.emulator.service.reset",1271097972106
+stopped,bundle,com.motorola.studio.android.emulator.service.start,0.5.0.release,"com.motorola.studio.android.emulator.service.start",1271097972106
+stopped,bundle,com.motorola.studio.android.emulator.service.stop,0.5.0.release,"com.motorola.studio.android.emulator.service.stop",1271097972106
+stopped,bundle,com.motorola.studio.android.emulator10,1.2.0.release,"com.motorola.studio.android.emulator10",1271097972106

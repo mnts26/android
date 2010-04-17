@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+
+<RelativeLayout android:id="@+id/RelativeLayout01" android:layout_width="wrap_content" android:layout_height="wrap_content"><Button android:id="@+id/Button01" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:text="Search" android:layout_width="wrap_content" android:layout_alignParentTop="true"></Button><EditText android:id="@+id/EditText01" android:layout_height="wrap_content" android:hint="Type resource name" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:layout_toLeftOf="@id/Button01" android:layout_width="wrap_content"></EditText></RelativeLayout>
+
+<om.basior.learning.CustomList.CustomListView android:id="@+id/ListView01" android:layout_width="fill_parent" android:layout_height="fill_parent">
+</om.basior.learning.CustomList.CustomListView>
+
+
+</LinearLayout>

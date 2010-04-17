@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271023347730
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271023349495
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271023350896
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271023360372
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271023371530
+activated,editor,com.android.ide.eclipse.adt,0.9.6.v201003030054_MOTODEV,"com.android.ide.eclipse.editors.layout.LayoutEditor",1271023373830
+activated,editor,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1271023374727
+executed,command,com.motorola.studio.android.launch,1.1.0.release,"com.motorola.studio.android.launch.android.app.run",1271023377237
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271023377520
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271023379569
+run,application_management,com.motorola.studio.android.launch,1.1.0.release,"device=emulator|use_vdl=n|prj_target=Android 2.0.1|target=Android 2.0.1",1271023379603
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271023383849
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271023396852
+stopped,emulator,com.motorola.studio.android.emulator.service.stop,0.5.0.release,"Status OK: org.eclipse.core.runtime code=0 OK null",1271023396885
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271023397444
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271023398812
+executed,command,com.motorola.studio.android.launch,1.1.0.release,"com.motorola.studio.android.launch.android.app.run",1271023401894
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271023404853
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271023418053
+started,emulator,com.motorola.studio.android.emulator.service.start,0.5.0.release,"target=Android 2.0.1",1271023422354
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271023422448
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271023424398
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271023425250
+run,application_management,com.motorola.studio.android.launch,1.1.0.release,"device=emulator|use_vdl=n|prj_target=Android 2.0.1|target=Android 2.0.1",1271023436547
+run,application_management,com.motorola.studio.android.launch,1.1.0.release,"device=emulator|use_vdl=n|prj_target=Android 2.0.1|target=Android 2.0.1",1271023436547

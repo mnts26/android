@@ -1,0 +1,32 @@
+package com.basior.learning;
+
+public class DataItem  implements com.basior.learning.CustomList.ImageResourceProvider {
+	int imageResource;
+	String text;
+	
+	
+	
+	public DataItem(int imageResource, String text) {
+		super();
+		this.imageResource = imageResource;
+		this.text = text;
+	}
+
+
+
+	@Override
+	public int getImageResourceId() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return text;
+	}
+
+	
+}

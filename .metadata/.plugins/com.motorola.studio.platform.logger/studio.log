@@ -1,0 +1,1009 @@
+2010-04-11 23:06:36,779 [Worker-3] INFO  class com.motorola.studio.android.installer.startup.InstallationChecker - Are all required components installed? true
+2010-04-11 23:06:36,779 [Worker-3] INFO  class com.motorola.studio.android.installer.startup.InstallationChecker - Is there any SDK set? false
+2010-04-11 23:08:01,442 [main] ERROR class com.motorola.studio.android.installer.wizard.TwoPhaseInstallerWizard - Error trying to get installable units: The provisioning plan could not be done because no installable units have been given.
+2010-04-11 23:13:53,635 [Worker-3] DEBUG class com.motorola.studio.android.ophone.OPhonePlugin - Added SDK listener to perform configurations when an OPhone SDK is loaded.
+2010-04-11 23:13:53,878 [Worker-3] INFO  Studio for Android - [Status: id=IDLE;name=IDLE]
+2010-04-11 23:13:53,878 [Worker-3] INFO  Studio for Android - [Status: id=com.motorola.studio.android.handset.status.handsetonline;name=Online]
+2010-04-11 23:13:53,878 [Worker-3] INFO  Studio for Android - [Status: id=com.motorola.studio.android.emulator.device.status.offlineNoData;name=Offline (no user data)]
+2010-04-11 23:13:53,878 [Worker-3] INFO  Studio for Android - [Status: id=com.motorola.studio.android.remote.status.connected;name=Connected]
+2010-04-11 23:13:53,878 [Worker-3] INFO  Studio for Android - [Status: id=com.motorola.studio.android.emulator.device.status.online;name=Online]
+2010-04-11 23:13:53,878 [Worker-3] INFO  Studio for Android - [Status: id=OFF;name=OFF]
+2010-04-11 23:13:53,878 [Worker-3] INFO  Studio for Android - [Status: id=INACTIVE;name=INACTIVE]
+2010-04-11 23:13:53,879 [Worker-3] INFO  Studio for Android - [Status: id=com.motorola.studio.android.emulator.device.status.notavailable;name=Not available]
+2010-04-11 23:13:53,879 [Worker-3] INFO  Studio for Android - [Status: id=com.motorola.studio.android.remote.status.disconnected;name=Disconnected]
+2010-04-11 23:13:53,879 [Worker-3] INFO  Studio for Android - [Status: id=com.motorola.studio.android.emulator.device.status.offline;name=Offline]
+2010-04-11 23:13:54,142 [Worker-7] DEBUG class com.motorola.studio.android.AndroidPlugin - Notify SDK loaded listener: com.motorola.studio.android.remote.RemoteDevicePlugin$1@7d7cd6ad
+2010-04-11 23:13:54,142 [Worker-7] DEBUG class com.motorola.studio.android.AndroidPlugin - Notify SDK loaded listener: com.motorola.studio.android.emulator.device.CreateAVDOnStartupListener$1@47f3ed7f
+2010-04-11 23:13:54,144 [Worker-7] DEBUG class com.motorola.studio.android.AndroidPlugin - Notify SDK loaded listener: com.motorola.studio.android.emulator.device.AndroidDevicePlugin$3@620a02d
+2010-04-11 23:13:54,237 [Worker-7] DEBUG class com.motorola.studio.android.AndroidPlugin - Notify SDK loaded listener: com.motorola.studio.android.ophone.OPhonePlugin$1@5f6d51c0
+2010-04-11 23:13:54,238 [Worker-7] DEBUG class com.motorola.studio.android.ophone.OPhonePlugin$1 - An SDK was just loaded. Check if it is an OPhone SDK
+2010-04-11 23:13:54,239 [Worker-7] DEBUG class com.motorola.studio.android.AndroidPlugin - Notify SDK loaded listener: com.motorola.studio.android.handset.HandsetPlugin$1@2124532
+2010-04-11 23:13:54,239 [Worker-7] DEBUG class com.motorola.studio.android.AndroidPlugin - Notify SDK loaded listener: com.motorola.studio.android.adt.DDMSFacade$1@642052de
+2010-04-11 23:14:05,045 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,047 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,047 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,047 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,047 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,047 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,048 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,048 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,048 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,048 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,048 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,048 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,048 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,049 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,049 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,049 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,049 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,049 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,049 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,049 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,049 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,050 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,050 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,050 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,050 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,050 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,050 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,050 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,050 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,050 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,050 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,050 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,050 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,051 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,051 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,051 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,051 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,051 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,051 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,051 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,051 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,051 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,051 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,051 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,051 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,051 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,051 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,051 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,051 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,051 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,051 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,051 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,051 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,051 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,051 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,051 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,051 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,051 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,051 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,052 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,052 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,052 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,052 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,052 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,052 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,052 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,052 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,052 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,052 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,052 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,052 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,052 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,052 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,052 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,052 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,052 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,052 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,052 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,052 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,052 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,052 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,052 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,052 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,052 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,052 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,053 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,053 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,053 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,053 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,053 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,053 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,053 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,053 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,053 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,053 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,053 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,053 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,053 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,053 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,053 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,053 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,053 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,053 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,053 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,053 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:14:05,053 [ModalContext] ERROR Studio for Android - org.eclipse.sequoyah.localization.tools.managers.LocalizationManager: Error getting Localization Schema
+2010-04-11 23:45:16,194 [main] DEBUG class com.motorola.studio.android.ophone.OPhonePlugin - Removed SDK listener that performs OPhone configurations when an SDK is loaded.
+2010-04-11 23:45:16,322 [main] DEBUG Studio for Android - org.eclipse.sequoyah.device.framework.wizard.DeviceWizardPlugin-SHUTDOWN
+2010-04-11 23:45:16,323 [main] DEBUG Studio for Android - org.eclipse.sequoyah.device.framework.ui.DeviceUIPlugin-SHUTDOWN
+2010-04-11 23:45:16,323 [main] DEBUG Studio for Android - org.eclipse.sequoyah.device.framework.DevicePlugin-SHUTDOWN
+2010-04-11 23:45:31,392 [Worker-3] INFO  class com.motorola.studio.android.installer.startup.InstallationChecker - Are all required components installed? true
+2010-04-11 23:45:31,392 [Worker-3] INFO  class com.motorola.studio.android.installer.startup.InstallationChecker - Is there any SDK set? true
+2010-04-11 23:45:31,481 [Worker-3] DEBUG class com.motorola.studio.android.ophone.OPhonePlugin - Added SDK listener to perform configurations when an OPhone SDK is loaded.
+2010-04-11 23:45:31,549 [Worker-3] INFO  Studio for Android - [Status: id=IDLE;name=IDLE]
+2010-04-11 23:45:31,549 [Worker-3] INFO  Studio for Android - [Status: id=com.motorola.studio.android.handset.status.handsetonline;name=Online]
+2010-04-11 23:45:31,549 [Worker-3] INFO  Studio for Android - [Status: id=com.motorola.studio.android.emulator.device.status.offlineNoData;name=Offline (no user data)]
+2010-04-11 23:45:31,549 [Worker-3] INFO  Studio for Android - [Status: id=com.motorola.studio.android.remote.status.connected;name=Connected]
+2010-04-11 23:45:31,549 [Worker-3] INFO  Studio for Android - [Status: id=com.motorola.studio.android.emulator.device.status.online;name=Online]
+2010-04-11 23:45:31,549 [Worker-3] INFO  Studio for Android - [Status: id=OFF;name=OFF]
+2010-04-11 23:45:31,549 [Worker-3] INFO  Studio for Android - [Status: id=INACTIVE;name=INACTIVE]
+2010-04-11 23:45:31,549 [Worker-3] INFO  Studio for Android - [Status: id=com.motorola.studio.android.emulator.device.status.notavailable;name=Not available]
+2010-04-11 23:45:31,549 [Worker-3] INFO  Studio for Android - [Status: id=com.motorola.studio.android.remote.status.disconnected;name=Disconnected]
+2010-04-11 23:45:31,549 [Worker-3] INFO  Studio for Android - [Status: id=com.motorola.studio.android.emulator.device.status.offline;name=Offline]
+2010-04-11 23:45:33,826 [Worker-3] DEBUG class com.motorola.studio.android.AndroidPlugin - Notify SDK loaded listener: com.motorola.studio.android.remote.RemoteDevicePlugin$1@465f62b6
+2010-04-11 23:45:33,826 [Worker-3] DEBUG class com.motorola.studio.android.AndroidPlugin - Notify SDK loaded listener: com.motorola.studio.android.emulator.device.CreateAVDOnStartupListener$1@714cf72c
+2010-04-11 23:45:33,832 [Worker-3] DEBUG class com.motorola.studio.android.AndroidPlugin - Notify SDK loaded listener: com.motorola.studio.android.handset.HandsetPlugin$1@723e82b
+2010-04-11 23:45:33,832 [Worker-3] DEBUG class com.motorola.studio.android.AndroidPlugin - Notify SDK loaded listener: com.motorola.studio.android.emulator.device.AndroidDevicePlugin$3@3aafe2b5
+2010-04-11 23:45:33,925 [Instance Event Manager] INFO  Studio for Android - The android device instance status was updated: avd2.0.1 Status: OFF
+2010-04-11 23:45:33,930 [Instance Event Manager] INFO  Studio for Android - The android device instance status was updated: avd2.0.1 Status: com.motorola.studio.android.emulator.device.status.notavailable
+2010-04-11 23:45:34,029 [Worker-3] INFO  Studio for Android - Added instance avd2.0.1 using default emulator definitions 
+2010-04-11 23:45:34,030 [Worker-3] DEBUG class com.motorola.studio.android.AndroidPlugin - Notify SDK loaded listener: com.motorola.studio.android.adt.DDMSFacade$1@3b3787ba
+2010-04-11 23:45:34,030 [Instance Event Manager] INFO  Studio for Android - The android device instance status was updated: avd2.0.1 Status: com.motorola.studio.android.emulator.device.status.offlineNoData
+2010-04-11 23:45:34,032 [Worker-3] DEBUG class com.motorola.studio.android.AndroidPlugin - Notify SDK loaded listener: com.motorola.studio.android.ophone.OPhonePlugin$1@73f7a3d0
+2010-04-11 23:45:34,032 [Worker-3] DEBUG class com.motorola.studio.android.ophone.OPhonePlugin$1 - An SDK was just loaded. Check if it is an OPhone SDK
+2010-04-11 23:58:12,529 [Worker-8] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@38d9e447
+2010-04-11 23:58:12,530 [Worker-8] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-11 23:58:12,546 [Worker-8] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Needs to Start the AVD instance before launching... 
+2010-04-11 23:58:14,071 [Worker-8] INFO  Studio for Android - Try to get Timeout property from avd2.0.1
+2010-04-11 23:58:14,096 [Worker-8] DEBUG Studio for Android - Retrieved start logic: com.motorola.studio.android.emulator10.StartAndroidEmulatorLogic@73f4c5ce
+2010-04-11 23:58:14,098 [Worker-8] INFO  Studio for Android - Executing StartEmulatorProcessLogic for avd2.0.1
+2010-04-11 23:58:14,098 [Worker-8] INFO  Studio for Android - Starting the Android Emulator process: avd2.0.1
+2010-04-11 23:58:14,107 [Worker-8] DEBUG Studio for Android - Command to execute: /opt/android-sdk-linux_86/tools/emulator -avd avd2.0.1
+2010-04-11 23:58:14,108 [Worker-8] INFO  Studio for Android - Executing command [Ljava.lang.String;@1a10dc5f
+2010-04-11 23:58:14,140 [Worker-8] INFO  Studio for Android - Wait until and emulator with the VM avd2.0.1 is up 
+2010-04-11 23:58:14,430 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: null online? false
+2010-04-11 23:58:14,680 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: null online? false
+2010-04-11 23:58:14,781 [Device List Monitor] DEBUG Studio for Android - Device connected: emulator-5554
+2010-04-11 23:58:14,797 [Device List Monitor] INFO  Studio for Android - New Device connected at emulator-5554
+2010-04-11 23:58:14,982 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:15,272 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:15,554 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:15,815 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:16,100 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:16,352 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:16,603 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:16,866 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:17,122 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:17,191 [Worker-0] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@741b31f2
+2010-04-11 23:58:17,211 [Worker-0] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-11 23:58:17,212 [Worker-0] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Needs to Start the AVD instance before launching... 
+2010-04-11 23:58:17,375 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:17,640 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:17,897 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:18,148 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:18,408 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:18,676 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:18,715 [Worker-0] INFO  Studio for Android - Try to get Timeout property from avd2.0.1
+2010-04-11 23:58:18,715 [Worker-0] DEBUG Studio for Android - Retrieved start logic: com.motorola.studio.android.emulator10.StartAndroidEmulatorLogic@73f4c5ce
+2010-04-11 23:58:18,715 [Worker-0] INFO  Studio for Android - Executing StartEmulatorProcessLogic for avd2.0.1
+2010-04-11 23:58:18,715 [Worker-0] INFO  Studio for Android - Starting the Android Emulator process: avd2.0.1
+2010-04-11 23:58:18,716 [Worker-0] DEBUG Studio for Android - Command to execute: /opt/android-sdk-linux_86/tools/emulator -avd avd2.0.1
+2010-04-11 23:58:18,716 [Worker-0] INFO  Studio for Android - Executing command [Ljava.lang.String;@43163a1e
+2010-04-11 23:58:18,761 [Worker-0] INFO  Studio for Android - Wait until and emulator with the VM avd2.0.1 is up 
+2010-04-11 23:58:18,936 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:19,040 [Worker-0] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:19,187 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:19,334 [Worker-0] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:19,466 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:19,586 [Worker-0] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:19,718 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:19,837 [Worker-0] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:19,992 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:20,088 [Worker-0] ERROR Studio for Android - Emulator process is not running! Exit code:2
+2010-04-11 23:58:20,102 [Worker-0] ERROR Studio for Android - An exception happened while trying to execute the start emulator logic for avd2.0.1 Try to rollback by executing the stop process...
+2010-04-11 23:58:20,102 [Worker-0] INFO  Studio for Android - Stopping the Android Emulator instance: avd2.0.1
+2010-04-11 23:58:20,102 [Worker-0] INFO  Studio for Android - Instance is not fully started yet. Execute a stop process directly...avd2.0.1
+2010-04-11 23:58:20,105 [Worker-0] ERROR Studio for Android - It was not possible to start the Android Emulator Instance. avd2.0.1Cause: The emulator process terminated unexpectedly:  emulator: ERROR: the user data image is used by another emulator. aborting
+
+2010-04-11 23:58:20,105 [Worker-0] DEBUG Studio for Android - Finished Execution of the start emulator service... :avd2.0.1 Status => Status ERROR: com.motorola.studio.android.emulator.logic code=0 The emulator process terminated unexpectedly:  emulator: ERROR: the user data image is used by another emulator. aborting
+ null
+2010-04-11 23:58:20,106 [Worker-0] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Status of the launch service: Status ERROR: com.motorola.studio.android.emulator.logic code=0 The emulator process terminated unexpectedly:  emulator: ERROR: the user data image is used by another emulator. aborting
+ null
+2010-04-11 23:58:20,111 [Instance Event Manager] INFO  Studio for Android - The android device instance status was updated: avd2.0.1 Status: com.motorola.studio.android.emulator.device.status.offlineNoData
+2010-04-11 23:58:20,133 [Worker-0] ERROR class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Error while lauching com.basior.learning.Main
+org.eclipse.core.runtime.CoreException: The emulator process terminated unexpectedly:  emulator: ERROR: the user data image is used by another emulator. aborting
+
+	at com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate.startEmuInstance(StudioAndroidConfigurationDelegate.java:638)
+	at com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate.launch(StudioAndroidConfigurationDelegate.java:417)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:853)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:696)
+	at com.motorola.studio.android.launch.LaunchConfigurationShortcut$1.run(LaunchConfigurationShortcut.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+2010-04-11 23:58:20,133 [Worker-6] INFO  Studio for Android - Stopping the Android Emulator instance
+2010-04-11 23:58:20,134 [Worker-6] INFO  Studio for Android - Trying to stop the protocol
+2010-04-11 23:58:20,171 [Worker-6] INFO  Studio for Android - Stopped the Android Emulator instance
+2010-04-11 23:58:20,171 [Worker-6] INFO  Studio for Android - Instance was initially in stopped/clean status. Rollback if needed.Stop Device Instance(228)
+2010-04-11 23:58:20,171 [Worker-6] INFO  Studio for Android - Deleted data created during the start tentative./home/buzz/.android/avd/avd2.0.1.avd/userdata-qemu.img
+2010-04-11 23:58:20,172 [Worker-6] INFO  Studio for Android - Finished stop process: avd2.0.1
+2010-04-11 23:58:20,228 [Device List Monitor] DEBUG Studio for Android - Device disconnected: emulator-5554
+2010-04-11 23:58:20,229 [Device List Monitor] INFO  Studio for Android - Device just disconnected from serial=emulator-5554
+2010-04-11 23:58:20,242 [Worker-8] ERROR Studio for Android - Emulator process is not running! Exit code:0
+2010-04-11 23:58:20,242 [Worker-8] ERROR Studio for Android - Cannot read error output  stream from Emulator proccess
+2010-04-11 23:58:20,242 [Worker-8] ERROR Studio for Android - Cannot read standard output stream from Emulator proccess
+2010-04-11 23:58:20,242 [Worker-8] ERROR Studio for Android - An exception happened while trying to execute the start emulator logic for avd2.0.1 Try to rollback by executing the stop process...
+2010-04-11 23:58:20,242 [Worker-8] INFO  Studio for Android - Stopping the Android Emulator instance: avd2.0.1
+2010-04-11 23:58:20,242 [Worker-8] ERROR Studio for Android - It was not possible to start the Android Emulator Instance. avd2.0.1Cause: The emulator process terminated unexpectedly:  
+2010-04-11 23:58:20,242 [Worker-8] DEBUG Studio for Android - Finished Execution of the start emulator service... :avd2.0.1 Status => Status ERROR: com.motorola.studio.android.emulator.logic code=0 The emulator process terminated unexpectedly:   null
+2010-04-11 23:58:20,242 [Worker-8] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Status of the launch service: Status ERROR: com.motorola.studio.android.emulator.logic code=0 The emulator process terminated unexpectedly:   null
+2010-04-11 23:58:20,244 [Worker-8] ERROR class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Error while lauching com.basior.learning.Main
+org.eclipse.core.runtime.CoreException: The emulator process terminated unexpectedly:  
+	at com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate.startEmuInstance(StudioAndroidConfigurationDelegate.java:638)
+	at com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate.launch(StudioAndroidConfigurationDelegate.java:417)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:853)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:696)
+	at com.motorola.studio.android.launch.LaunchConfigurationShortcut$1.run(LaunchConfigurationShortcut.java:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+2010-04-11 23:58:20,244 [Instance Event Manager] INFO  Studio for Android - The android device instance status was updated: avd2.0.1 Status: com.motorola.studio.android.emulator.device.status.offlineNoData
+2010-04-11 23:58:29,020 [Worker-10] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@dc0d32e
+2010-04-11 23:58:29,024 [Worker-10] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-11 23:58:29,024 [Worker-10] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Needs to Start the AVD instance before launching... 
+2010-04-11 23:58:30,525 [Worker-10] INFO  Studio for Android - Try to get Timeout property from avd2.0.1
+2010-04-11 23:58:30,525 [Worker-10] DEBUG Studio for Android - Retrieved start logic: com.motorola.studio.android.emulator10.StartAndroidEmulatorLogic@73f4c5ce
+2010-04-11 23:58:30,525 [Worker-10] INFO  Studio for Android - Executing StartEmulatorProcessLogic for avd2.0.1
+2010-04-11 23:58:30,525 [Worker-10] INFO  Studio for Android - Starting the Android Emulator process: avd2.0.1
+2010-04-11 23:58:30,526 [Worker-10] DEBUG Studio for Android - Command to execute: /opt/android-sdk-linux_86/tools/emulator -avd avd2.0.1
+2010-04-11 23:58:30,526 [Worker-10] INFO  Studio for Android - Executing command [Ljava.lang.String;@7e02e714
+2010-04-11 23:58:30,574 [Worker-10] INFO  Studio for Android - Wait until and emulator with the VM avd2.0.1 is up 
+2010-04-11 23:58:30,830 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: null online? false
+2010-04-11 23:58:30,940 [Device List Monitor] DEBUG Studio for Android - Device connected: emulator-5554
+2010-04-11 23:58:30,949 [Device List Monitor] INFO  Studio for Android - New Device connected at emulator-5554
+2010-04-11 23:58:31,092 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:31,352 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:31,603 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:31,862 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:32,113 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:32,365 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:32,617 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:32,874 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:38,123 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:43,343 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:48,583 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:49,123 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:49,403 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:49,663 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:49,914 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:50,173 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:50,424 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:50,675 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:50,925 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:51,183 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:51,463 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:51,723 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:51,983 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:52,233 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:52,484 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:52,753 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:53,023 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:53,274 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:53,543 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:53,794 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:54,063 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:54,314 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:54,565 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:54,816 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:55,073 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:55,343 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:55,594 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:55,844 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:56,095 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:56,383 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:56,643 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:56,894 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:57,145 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:57,400 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:57,663 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:57,914 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:58,173 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:58:58,463 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:59:03,733 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:59:03,993 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:59:04,244 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:59:04,494 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:59:04,753 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:59:05,012 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:59:05,263 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:59:05,513 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:59:05,764 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:59:06,076 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:59:06,404 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:59:06,655 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:59:06,914 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:59:07,225 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:59:07,534 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-11 23:59:07,771 [Device List Monitor] DEBUG Studio for Android - Device changed: emulator-5554
+2010-04-11 23:59:07,796 [Worker-10] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? true
+2010-04-11 23:59:07,796 [Worker-10] DEBUG Studio for Android - Emulator instance is now up and running... avd2.0.1
+2010-04-11 23:59:07,796 [Worker-10] DEBUG Studio for Android - Finished Execution of the start emulator service... :avd2.0.1 Status => Status OK: org.eclipse.core.runtime code=0 OK null
+2010-04-11 23:59:07,796 [Worker-10] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Status of the launch service: Status OK: org.eclipse.core.runtime code=0 OK null
+2010-04-11 23:59:07,796 [Instance Event Manager] INFO  Studio for Android - The android device instance status was updated: avd2.0.1 Status: com.motorola.studio.android.emulator.device.status.online
+2010-04-11 23:59:07,797 [Instance Event Manager] INFO  Studio for Android - The emulator avd2.0.1 transitioned to started state. Try to estabilish a VNC connection...
+2010-04-11 23:59:07,799 [Thread-42] INFO  Studio for Android - Open and move focus to the emulator view
+2010-04-11 23:59:09,322 [Thread-46] DEBUG Studio for Android - Application Changed: system_process
+2010-04-12 00:02:59,582 [Worker-12] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@10ddc385
+2010-04-12 00:02:59,585 [Worker-12] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-12 00:03:16,880 [Device List Monitor] DEBUG Studio for Android - Device disconnected: emulator-5554
+2010-04-12 00:03:16,880 [Device List Monitor] INFO  Studio for Android - Device just disconnected from serial=emulator-5554
+2010-04-12 00:03:16,880 [Device List Monitor] INFO  Studio for Android - Stopping the Android Emulator instance: avd2.0.1
+2010-04-12 00:03:16,880 [Device List Monitor] INFO  Studio for Android - Instance is started. Run the regular transition to stopped status: avd2.0.1
+2010-04-12 00:03:16,883 [Device List Monitor] INFO  Studio for Android - Finished stop process: avd2.0.1
+2010-04-12 00:03:16,883 [Worker-8] DEBUG Studio for Android - Executing the stop emulator service... Instance:avd2.0.1 Arguments:{force=true}
+2010-04-12 00:03:16,884 [Worker-8] INFO  Studio for Android - Stopping the Android Emulator instance
+2010-04-12 00:03:16,884 [Worker-8] INFO  Studio for Android - Trying to stop the protocol
+2010-04-12 00:03:16,884 [Worker-8] INFO  Studio for Android - Stopped the Android Emulator instance
+2010-04-12 00:03:16,885 [Worker-8] DEBUG Studio for Android - Finished the execution of the stop emulator service: avd2.0.1 status: Status OK: org.eclipse.core.runtime code=0 OK null
+2010-04-12 00:03:16,896 [Instance Event Manager] INFO  Studio for Android - The android device instance status was updated: avd2.0.1 Status: com.motorola.studio.android.emulator.device.status.offline
+2010-04-12 00:03:21,915 [Worker-8] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@4836a855
+2010-04-12 00:03:21,916 [Worker-8] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-12 00:03:21,917 [Worker-8] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Needs to Start the AVD instance before launching... 
+2010-04-12 00:03:23,417 [Worker-8] INFO  Studio for Android - Try to get Timeout property from avd2.0.1
+2010-04-12 00:03:23,417 [Worker-8] DEBUG Studio for Android - Retrieved start logic: com.motorola.studio.android.emulator10.StartAndroidEmulatorLogic@73f4c5ce
+2010-04-12 00:03:23,417 [Worker-8] INFO  Studio for Android - Executing StartEmulatorProcessLogic for avd2.0.1
+2010-04-12 00:03:23,417 [Worker-8] INFO  Studio for Android - Starting the Android Emulator process: avd2.0.1
+2010-04-12 00:03:23,417 [Worker-8] DEBUG Studio for Android - Command to execute: /opt/android-sdk-linux_86/tools/emulator -avd avd2.0.1
+2010-04-12 00:03:23,417 [Worker-8] INFO  Studio for Android - Executing command [Ljava.lang.String;@30d4540b
+2010-04-12 00:03:23,464 [Worker-8] INFO  Studio for Android - Wait until and emulator with the VM avd2.0.1 is up 
+2010-04-12 00:03:23,736 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: null online? false
+2010-04-12 00:03:23,851 [Device List Monitor] DEBUG Studio for Android - Device connected: emulator-5554
+2010-04-12 00:03:23,857 [Device List Monitor] INFO  Studio for Android - New Device connected at emulator-5554
+2010-04-12 00:03:24,014 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:24,284 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:24,535 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:24,786 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:25,154 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:25,503 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:25,754 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:26,006 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:26,256 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:26,507 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:26,758 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:27,009 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:27,260 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:27,510 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:27,761 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:28,012 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:28,263 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:28,513 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:28,764 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:29,015 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:29,265 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:29,516 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:29,767 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:30,018 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:30,276 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:30,526 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:30,786 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:31,037 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:31,296 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:31,547 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:31,806 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:32,074 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:32,325 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:32,576 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:32,827 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:33,077 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:33,336 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:33,596 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:33,914 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:34,164 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:34,476 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:34,737 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:35,034 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:35,294 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:35,544 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:35,795 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:36,074 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:36,344 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:36,604 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:36,855 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:37,126 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:37,396 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:37,655 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:37,905 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:38,166 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:38,416 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:38,668 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:38,932 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:39,183 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:39,446 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:39,706 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:39,966 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:40,235 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:40,512 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:40,766 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:41,022 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:41,292 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:41,554 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:41,832 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:42,102 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 00:03:42,292 [Device List Monitor] DEBUG Studio for Android - Device changed: emulator-5554
+2010-04-12 00:03:42,354 [Worker-8] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? true
+2010-04-12 00:03:42,354 [Worker-8] DEBUG Studio for Android - Emulator instance is now up and running... avd2.0.1
+2010-04-12 00:03:42,354 [Worker-8] DEBUG Studio for Android - Finished Execution of the start emulator service... :avd2.0.1 Status => Status OK: org.eclipse.core.runtime code=0 OK null
+2010-04-12 00:03:42,355 [Worker-8] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Status of the launch service: Status OK: org.eclipse.core.runtime code=0 OK null
+2010-04-12 00:03:42,355 [Instance Event Manager] INFO  Studio for Android - The android device instance status was updated: avd2.0.1 Status: com.motorola.studio.android.emulator.device.status.online
+2010-04-12 00:03:42,355 [Instance Event Manager] INFO  Studio for Android - The emulator avd2.0.1 transitioned to started state. Try to estabilish a VNC connection...
+2010-04-12 00:03:42,355 [Thread-107] INFO  Studio for Android - Open and move focus to the emulator view
+2010-04-12 00:03:42,707 [Thread-109] DEBUG Studio for Android - Application Changed: system_process
+2010-04-12 00:03:46,347 [Thread-116] DEBUG Studio for Android - Application Changed: jp.co.omronsoft.openwnn
+2010-04-12 00:03:49,288 [Thread-117] DEBUG Studio for Android - Application Changed: com.android.phone
+2010-04-12 00:03:49,843 [Thread-118] DEBUG Studio for Android - Application Changed: com.android.sdksetup
+2010-04-12 00:03:56,540 [Thread-120] DEBUG Studio for Android - Application Changed: android.process.acore
+2010-04-12 00:03:56,540 [Monitor] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Delegating launch session to ADT... 
+2010-04-12 00:03:56,541 [Monitor] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Delegating launch session to ADT... 
+2010-04-12 00:03:56,541 [Monitor] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Delegating launch session to ADT... 
+2010-04-12 00:03:56,541 [Thread-120] DEBUG Studio for Android - Completely Up Device: emulator-5554
+2010-04-12 00:03:57,853 [Thread-127] DEBUG Studio for Android - Application Changed: com.android.mms
+2010-04-12 00:04:04,811 [Thread-130] DEBUG Studio for Android - Application Changed: com.android.alarmclock
+2010-04-12 00:04:11,110 [Thread-134] DEBUG Studio for Android - Application Changed: android.process.media
+2010-04-12 00:04:14,054 [Thread-136] DEBUG Studio for Android - Application Changed: com.basior.learning
+2010-04-12 00:04:16,967 [Thread-138] DEBUG Studio for Android - Application Changed: com.svox.pico
+2010-04-12 00:04:25,259 [Thread-141] DEBUG Studio for Android - Application Changed: com.android.email
+2010-04-12 00:04:26,047 [Thread-144] DEBUG Studio for Android - Application Changed: com.basior.learning
+2010-04-12 00:07:14,371 [Worker-6] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@54b78bc
+2010-04-12 00:07:14,418 [Worker-6] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-12 00:07:20,144 [Thread-185] DEBUG Studio for Android - Application Changed: com.basior.learning
+2010-04-12 00:07:36,746 [Worker-13] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@21c1f2c0
+2010-04-12 00:07:36,747 [Worker-13] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-12 00:08:37,874 [Worker-6] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@631e1d43
+2010-04-12 00:08:37,876 [Worker-6] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-12 00:09:01,553 [Worker-6] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@698df4bf
+2010-04-12 00:09:01,554 [Worker-6] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-12 00:09:06,854 [Thread-213] DEBUG Studio for Android - Application Changed: com.basior.learning
+2010-04-12 00:11:42,121 [Worker-13] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@4be18ba
+2010-04-12 00:11:42,124 [Worker-13] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-12 00:11:47,955 [Thread-267] DEBUG Studio for Android - Application Changed: com.basior.learning
+2010-04-12 00:12:03,690 [Worker-6] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@524b9e7c
+2010-04-12 00:12:03,693 [Worker-6] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-12 00:12:07,325 [Thread-276] DEBUG Studio for Android - Application Changed: com.basior.learning
+2010-04-12 00:13:56,050 [Worker-12] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@5e4e3d62
+2010-04-12 00:13:56,058 [Worker-12] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-12 00:14:07,699 [Worker-6] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@159dad7e
+2010-04-12 00:14:07,700 [Worker-6] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-12 00:14:13,008 [Thread-340] DEBUG Studio for Android - Application Changed: com.basior.learning
+2010-04-12 00:15:02,086 [Worker-10] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@18c9d40b
+2010-04-12 00:15:02,087 [Worker-10] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-12 00:16:05,684 [Worker-13] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@58f79d9a
+2010-04-12 00:16:05,685 [Worker-13] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-12 00:16:11,146 [Thread-365] DEBUG Studio for Android - Application Changed: com.basior.learning
+2010-04-12 00:42:07,894 [Device List Monitor] DEBUG Studio for Android - Device disconnected: emulator-5554
+2010-04-12 00:42:07,894 [Device List Monitor] INFO  Studio for Android - Device just disconnected from serial=emulator-5554
+2010-04-12 00:42:07,895 [Device List Monitor] INFO  Studio for Android - Stopping the Android Emulator instance: avd2.0.1
+2010-04-12 00:42:07,895 [Device List Monitor] INFO  Studio for Android - Instance is started. Run the regular transition to stopped status: avd2.0.1
+2010-04-12 00:42:07,895 [Device List Monitor] INFO  Studio for Android - Finished stop process: avd2.0.1
+2010-04-12 00:42:08,315 [Worker-13] DEBUG Studio for Android - Executing the stop emulator service... Instance:avd2.0.1 Arguments:{force=true}
+2010-04-12 00:42:08,315 [Worker-13] INFO  Studio for Android - Stopping the Android Emulator instance
+2010-04-12 00:42:08,315 [Worker-13] INFO  Studio for Android - Trying to stop the protocol
+2010-04-12 00:42:08,316 [Worker-13] INFO  Studio for Android - Stopped the Android Emulator instance
+2010-04-12 00:42:08,316 [Worker-13] DEBUG Studio for Android - Finished the execution of the stop emulator service: avd2.0.1 status: Status OK: org.eclipse.core.runtime code=0 OK null
+2010-04-12 00:42:08,339 [Instance Event Manager] INFO  Studio for Android - The android device instance status was updated: avd2.0.1 Status: com.motorola.studio.android.emulator.device.status.offline
+2010-04-12 20:04:51,078 [Worker-1] DEBUG class com.motorola.studio.android.AndroidPlugin - Notify SDK loaded listener: com.motorola.studio.android.emulator.device.CreateAVDOnStartupListener$1@774c61a6
+2010-04-12 20:04:51,104 [Worker-1] DEBUG class com.motorola.studio.android.AndroidPlugin - Notify SDK loaded listener: com.motorola.studio.android.emulator.device.AndroidDevicePlugin$3@4df4a05d
+2010-04-12 20:04:51,086 [Worker-2] INFO  class com.motorola.studio.android.installer.startup.InstallationChecker - Are all required components installed? true
+2010-04-12 20:04:51,125 [Worker-2] INFO  class com.motorola.studio.android.installer.startup.InstallationChecker - Is there any SDK set? true
+2010-04-12 20:04:51,131 [Worker-2] DEBUG class com.motorola.studio.android.ophone.OPhonePlugin - Added SDK listener to perform configurations when an OPhone SDK is loaded.
+2010-04-12 20:04:51,448 [Worker-1] DEBUG class com.motorola.studio.android.AndroidPlugin - Notify SDK loaded listener: com.motorola.studio.android.adt.DDMSFacade$1@6a3b1937
+2010-04-12 20:04:51,486 [Instance Event Manager] INFO  Studio for Android - The android device instance status was updated: avd2.0.1 Status: com.motorola.studio.android.emulator.device.status.offline
+2010-04-12 20:04:51,562 [Worker-2] INFO  Studio for Android - [Status: id=IDLE;name=IDLE]
+2010-04-12 20:04:51,564 [Worker-2] INFO  Studio for Android - [Status: id=com.motorola.studio.android.handset.status.handsetonline;name=Online]
+2010-04-12 20:04:51,564 [Worker-2] INFO  Studio for Android - [Status: id=com.motorola.studio.android.emulator.device.status.offlineNoData;name=Offline (no user data)]
+2010-04-12 20:04:51,564 [Worker-2] INFO  Studio for Android - [Status: id=com.motorola.studio.android.remote.status.connected;name=Connected]
+2010-04-12 20:04:51,564 [Worker-2] INFO  Studio for Android - [Status: id=com.motorola.studio.android.emulator.device.status.online;name=Online]
+2010-04-12 20:04:51,564 [Worker-2] INFO  Studio for Android - [Status: id=OFF;name=OFF]
+2010-04-12 20:04:51,565 [Worker-2] INFO  Studio for Android - [Status: id=INACTIVE;name=INACTIVE]
+2010-04-12 20:04:51,565 [Worker-2] INFO  Studio for Android - [Status: id=com.motorola.studio.android.emulator.device.status.notavailable;name=Not available]
+2010-04-12 20:04:51,565 [Worker-2] INFO  Studio for Android - [Status: id=com.motorola.studio.android.remote.status.disconnected;name=Disconnected]
+2010-04-12 20:04:51,565 [Worker-2] INFO  Studio for Android - [Status: id=com.motorola.studio.android.emulator.device.status.offline;name=Offline]
+2010-04-12 20:04:51,585 [Instance Event Manager] INFO  Studio for Android - The android device instance status was updated: avd2.0.1 Status: com.motorola.studio.android.emulator.device.status.offline
+2010-04-12 20:06:54,526 [Device List Monitor] DEBUG Studio for Android - Device connected: 040376680D01701B
+2010-04-12 20:07:04,713 [Device List Monitor] DEBUG Studio for Android - Device changed: 040376680D01701B
+2010-04-12 20:07:04,956 [Thread-8] DEBUG Studio for Android - Application Changed: com.google.android.apps.uploader
+2010-04-12 20:07:41,969 [Device List Monitor] DEBUG Studio for Android - Device disconnected: 040376680D01701B
+2010-04-12 20:08:13,406 [Device List Monitor] DEBUG Studio for Android - Device connected: 040376680D01701B
+2010-04-12 20:08:23,561 [Device List Monitor] DEBUG Studio for Android - Device changed: 040376680D01701B
+2010-04-12 20:08:23,696 [Device List Monitor] DEBUG Studio for Android - Device disconnected: 040376680D01701B
+2010-04-12 20:08:23,699 [Device List Monitor] DEBUG Studio for Android - Device connected: 040376680D01701B
+2010-04-12 20:08:33,981 [Device List Monitor] DEBUG Studio for Android - Device changed: 040376680D01701B
+2010-04-12 20:08:34,214 [Thread-9] DEBUG Studio for Android - Application Changed: com.google.android.apps.uploader
+2010-04-12 20:08:45,305 [Worker-4] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@5cf8fdd3
+2010-04-12 20:08:45,310 [Worker-4] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-12 20:08:45,312 [Worker-4] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Needs to Start the AVD instance before launching... 
+2010-04-12 20:08:46,827 [Worker-4] INFO  Studio for Android - Try to get Timeout property from avd2.0.1
+2010-04-12 20:08:46,870 [Worker-4] DEBUG Studio for Android - Retrieved start logic: com.motorola.studio.android.emulator10.StartAndroidEmulatorLogic@7c502d56
+2010-04-12 20:08:46,875 [Worker-4] INFO  Studio for Android - Executing StartEmulatorProcessLogic for avd2.0.1
+2010-04-12 20:08:46,876 [Worker-4] INFO  Studio for Android - Starting the Android Emulator process: avd2.0.1
+2010-04-12 20:08:46,909 [Worker-4] DEBUG Studio for Android - Command to execute: /opt/android-sdk-linux_86/tools/emulator -avd avd2.0.1
+2010-04-12 20:08:46,909 [Worker-4] INFO  Studio for Android - Executing command [Ljava.lang.String;@1e1ccfec
+2010-04-12 20:08:46,942 [Worker-4] INFO  Studio for Android - Wait until and emulator with the VM avd2.0.1 is up 
+2010-04-12 20:08:47,199 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: null online? false
+2010-04-12 20:08:47,449 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: null online? false
+2010-04-12 20:08:47,709 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: null online? false
+2010-04-12 20:08:47,960 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: null online? false
+2010-04-12 20:08:48,035 [Device List Monitor] DEBUG Studio for Android - Device connected: emulator-5554
+2010-04-12 20:08:48,209 [Device List Monitor] INFO  Studio for Android - New Device connected at emulator-5554
+2010-04-12 20:08:48,227 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:08:48,514 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:08:48,793 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:08:49,083 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:08:49,474 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:08:49,727 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:08:49,983 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:08:50,243 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:08:50,496 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:08:50,748 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:08:51,000 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:08:51,255 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:08:51,508 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:08:51,760 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:08:52,013 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:08:52,265 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:08:52,523 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:08:52,775 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:08:53,027 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:08:53,279 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:08:53,530 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:08:53,786 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:08:54,037 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:08:54,294 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:08:54,548 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:08:54,800 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:08:55,053 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:08:55,304 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:08:55,567 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:08:55,819 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:08:56,070 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:08:56,327 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:08:56,584 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:08:56,836 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:08:57,087 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:08:57,339 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:08:57,597 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:08:57,849 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:08:58,107 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:08:58,371 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:08:58,627 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:08:58,887 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:08:59,142 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:08:59,394 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:08:59,647 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:08:59,906 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:00,167 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:00,419 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:00,670 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:00,927 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:01,178 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:01,435 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:01,687 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:01,947 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:02,207 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:02,466 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:02,717 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:02,969 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:03,227 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:03,485 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:03,736 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:03,987 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:04,265 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:04,526 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:04,785 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:05,085 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:05,360 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:05,667 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:05,927 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:06,225 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:06,493 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:06,743 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:06,994 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:07,265 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:07,555 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:07,835 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:08,115 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:08,395 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:08,675 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:08,965 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:09,255 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:09,535 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:09,825 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:10,105 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:10,395 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:10,685 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:10,975 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:11,265 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:11,607 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:11,877 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:12,147 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:12,460 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:12,711 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:12,977 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:13,347 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:13,707 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:14,003 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:14,307 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:14,617 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:14,927 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:15,197 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:15,507 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:15,867 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:16,118 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:16,947 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:17,269 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:17,544 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:17,823 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:18,153 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:18,436 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:18,755 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:19,017 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:19,277 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-12 20:09:19,645 [Device List Monitor] DEBUG Studio for Android - Device changed: emulator-5554
+2010-04-12 20:09:19,646 [Worker-4] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? true
+2010-04-12 20:09:19,646 [Worker-4] DEBUG Studio for Android - Emulator instance is now up and running... avd2.0.1
+2010-04-12 20:09:19,647 [Worker-4] DEBUG Studio for Android - Finished Execution of the start emulator service... :avd2.0.1 Status => Status OK: org.eclipse.core.runtime code=0 OK null
+2010-04-12 20:09:19,663 [Worker-4] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Status of the launch service: Status OK: org.eclipse.core.runtime code=0 OK null
+2010-04-12 20:09:19,665 [Instance Event Manager] INFO  Studio for Android - The android device instance status was updated: avd2.0.1 Status: com.motorola.studio.android.emulator.device.status.online
+2010-04-12 20:09:19,665 [Instance Event Manager] INFO  Studio for Android - The emulator avd2.0.1 transitioned to started state. Try to estabilish a VNC connection...
+2010-04-12 20:09:19,667 [Thread-14] INFO  Studio for Android - Open and move focus to the emulator view
+2010-04-12 20:09:22,594 [Thread-16] DEBUG Studio for Android - Application Changed: system_process
+2010-04-12 20:09:29,147 [Thread-23] DEBUG Studio for Android - Application Changed: com.android.phone
+2010-04-12 20:09:29,218 [Thread-24] DEBUG Studio for Android - Application Changed: jp.co.omronsoft.openwnn
+2010-04-12 20:09:29,790 [Monitor] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Delegating launch session to ADT... 
+2010-04-12 20:09:29,792 [Thread-25] DEBUG Studio for Android - Application Changed: android.process.acore
+2010-04-12 20:09:29,792 [Thread-25] DEBUG Studio for Android - Completely Up Device: emulator-5554
+2010-04-12 20:09:35,464 [Thread-31] DEBUG Studio for Android - Application Changed: com.android.settings
+2010-04-12 20:09:41,519 [Thread-34] DEBUG Studio for Android - Application Changed: com.android.mms
+2010-04-12 20:09:45,440 [Thread-37] DEBUG Studio for Android - Application Changed: com.android.alarmclock
+2010-04-12 20:09:47,024 [Thread-40] DEBUG Studio for Android - Application Changed: com.svox.pico
+2010-04-12 20:09:48,476 [Thread-43] DEBUG Studio for Android - Application Changed: android.process.media
+2010-04-12 20:09:50,117 [Thread-46] DEBUG Studio for Android - Application Changed: com.basior.learning
+2010-04-12 20:09:52,865 [Thread-49] DEBUG Studio for Android - Application Changed: com.android.email
+2010-04-12 20:10:11,856 [Worker-3] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@ecf7607
+2010-04-12 20:10:11,860 [Worker-3] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: 040376680D01701B
+2010-04-12 20:10:49,580 [Worker-4] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@316db8d6
+2010-04-12 20:10:49,581 [Worker-4] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: 040376680D01701B
+2010-04-12 20:11:47,321 [Worker-4] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@1d6e5ecb
+2010-04-12 20:11:47,323 [Worker-4] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: 040376680D01701B
+2010-04-12 20:13:10,700 [Device List Monitor] DEBUG Studio for Android - Device disconnected: 040376680D01701B
+2010-04-12 20:46:12,076 [main] DEBUG class com.motorola.studio.android.ophone.OPhonePlugin - Removed SDK listener that performs OPhone configurations when an SDK is loaded.
+2010-04-12 20:46:12,186 [main] DEBUG Studio for Android - org.eclipse.sequoyah.device.framework.wizard.DeviceWizardPlugin-SHUTDOWN
+2010-04-12 20:46:12,210 [main] DEBUG Studio for Android - org.eclipse.sequoyah.device.framework.ui.DeviceUIPlugin-SHUTDOWN
+2010-04-12 20:46:12,211 [main] DEBUG Studio for Android - org.eclipse.sequoyah.device.framework.DevicePlugin-SHUTDOWN
+2010-04-16 21:43:19,881 [Worker-6] DEBUG class com.motorola.studio.android.AndroidPlugin - Notify SDK loaded listener: com.motorola.studio.android.adt.DDMSFacade$1@7c46f6f0
+2010-04-16 21:43:19,912 [Worker-6] DEBUG class com.motorola.studio.android.AndroidPlugin - Notify SDK loaded listener: com.motorola.studio.android.emulator.device.AndroidDevicePlugin$3@16fe464e
+2010-04-16 21:43:19,894 [Worker-0] INFO  class com.motorola.studio.android.installer.startup.InstallationChecker - Are all required components installed? true
+2010-04-16 21:43:19,935 [Worker-0] INFO  class com.motorola.studio.android.installer.startup.InstallationChecker - Is there any SDK set? true
+2010-04-16 21:43:19,943 [Worker-0] DEBUG class com.motorola.studio.android.ophone.OPhonePlugin - Added SDK listener to perform configurations when an OPhone SDK is loaded.
+2010-04-16 21:43:20,196 [Instance Event Manager] INFO  Studio for Android - The android device instance status was updated: avd2.0.1 Status: OFF
+2010-04-16 21:43:20,242 [Instance Event Manager] INFO  Studio for Android - The android device instance status was updated: avd2.0.1 Status: com.motorola.studio.android.emulator.device.status.offline
+2010-04-16 21:43:20,272 [Worker-6] DEBUG class com.motorola.studio.android.AndroidPlugin - Notify SDK loaded listener: com.motorola.studio.android.emulator.device.CreateAVDOnStartupListener$1@fb9b6ad
+2010-04-16 21:43:20,470 [Worker-0] INFO  Studio for Android - [Status: id=IDLE;name=IDLE]
+2010-04-16 21:43:20,487 [Worker-0] INFO  Studio for Android - [Status: id=com.motorola.studio.android.handset.status.handsetonline;name=Online]
+2010-04-16 21:43:20,487 [Worker-0] INFO  Studio for Android - [Status: id=com.motorola.studio.android.emulator.device.status.offlineNoData;name=Offline (no user data)]
+2010-04-16 21:43:20,487 [Worker-0] INFO  Studio for Android - [Status: id=com.motorola.studio.android.remote.status.connected;name=Connected]
+2010-04-16 21:43:20,487 [Worker-0] INFO  Studio for Android - [Status: id=com.motorola.studio.android.emulator.device.status.online;name=Online]
+2010-04-16 21:43:20,487 [Worker-0] INFO  Studio for Android - [Status: id=OFF;name=OFF]
+2010-04-16 21:43:20,487 [Worker-0] INFO  Studio for Android - [Status: id=INACTIVE;name=INACTIVE]
+2010-04-16 21:43:20,487 [Worker-0] INFO  Studio for Android - [Status: id=com.motorola.studio.android.emulator.device.status.notavailable;name=Not available]
+2010-04-16 21:43:20,487 [Worker-0] INFO  Studio for Android - [Status: id=com.motorola.studio.android.remote.status.disconnected;name=Disconnected]
+2010-04-16 21:43:20,487 [Worker-0] INFO  Studio for Android - [Status: id=com.motorola.studio.android.emulator.device.status.offline;name=Offline]
+2010-04-16 22:01:21,830 [Worker-7] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main (1) mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@37cb63fd
+2010-04-16 22:01:21,832 [Worker-7] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-16 22:01:21,833 [Worker-7] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Needs to Start the AVD instance before launching... 
+2010-04-16 22:01:23,356 [Worker-7] INFO  Studio for Android - Try to get Timeout property from avd2.0.1
+2010-04-16 22:01:23,405 [Worker-7] DEBUG Studio for Android - Retrieved start logic: com.motorola.studio.android.emulator10.StartAndroidEmulatorLogic@49bcbe77
+2010-04-16 22:01:23,412 [Worker-7] INFO  Studio for Android - Executing StartEmulatorProcessLogic for avd2.0.1
+2010-04-16 22:01:23,412 [Worker-7] INFO  Studio for Android - Starting the Android Emulator process: avd2.0.1
+2010-04-16 22:01:23,437 [Worker-7] DEBUG Studio for Android - Command to execute: /opt/android-sdk-linux_86/tools/emulator -avd avd2.0.1
+2010-04-16 22:01:23,437 [Worker-7] INFO  Studio for Android - Executing command [Ljava.lang.String;@1aa903ea
+2010-04-16 22:01:23,484 [Worker-7] INFO  Studio for Android - Wait until and emulator with the VM avd2.0.1 is up 
+2010-04-16 22:01:23,741 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: null online? false
+2010-04-16 22:01:23,991 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: null online? false
+2010-04-16 22:01:24,246 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: null online? false
+2010-04-16 22:01:24,496 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: null online? false
+2010-04-16 22:01:24,747 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: null online? false
+2010-04-16 22:01:24,997 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: null online? false
+2010-04-16 22:01:25,248 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: null online? false
+2010-04-16 22:01:25,498 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: null online? false
+2010-04-16 22:01:25,640 [Device List Monitor] DEBUG Studio for Android - Device connected: emulator-5554
+2010-04-16 22:01:25,729 [Device List Monitor] INFO  Studio for Android - New Device connected at emulator-5554
+2010-04-16 22:01:25,823 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:26,089 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:26,646 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:26,966 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:27,286 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:27,606 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:27,879 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:28,166 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:28,436 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:28,690 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:28,946 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:29,197 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:29,448 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:29,703 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:29,967 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:30,218 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:30,494 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:30,746 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:31,000 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:31,269 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:31,537 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:31,806 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:32,085 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:32,348 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:32,646 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:32,909 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:33,178 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:33,445 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:33,699 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:33,951 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:34,207 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:34,459 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:34,729 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:34,979 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:35,249 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:35,509 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:35,760 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:36,012 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:36,263 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:36,519 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:36,772 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:37,029 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:37,289 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:37,541 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:37,799 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:38,059 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:38,328 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:38,583 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:38,843 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:39,152 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:39,413 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:39,667 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:39,922 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:40,172 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:40,449 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:40,717 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:40,978 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:41,258 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:41,585 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:41,878 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:42,152 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:42,428 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:42,705 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:42,958 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:43,220 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:43,478 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:43,748 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:44,018 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:44,288 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:44,578 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:44,841 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:45,108 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:45,368 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:45,629 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:45,880 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:46,137 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:46,388 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:46,640 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:46,908 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:47,165 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:47,419 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:47,687 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:47,947 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:48,219 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:48,477 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:48,732 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:48,984 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:49,248 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:49,519 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:49,779 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:50,084 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:50,340 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:50,599 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:50,859 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:51,119 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:51,371 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:51,623 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:51,879 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:52,137 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:52,399 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:52,651 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:52,902 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:53,156 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:53,407 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:53,658 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:53,912 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:54,162 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:54,428 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:54,699 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:54,959 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:55,219 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:55,479 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:55,749 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:56,010 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:56,269 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:56,529 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:56,780 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:57,092 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:57,349 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:57,609 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:57,918 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:58,189 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:58,489 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:58,749 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:59,009 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:59,277 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:59,528 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:01:59,779 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:02:00,039 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:02:00,309 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:02:00,578 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:02:00,909 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:02:01,209 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:02:01,459 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:02:01,719 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:02:01,985 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:02:02,269 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:02:03,546 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:02:03,819 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:02:04,078 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:02:04,379 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:02:04,679 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:02:04,949 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:02:05,259 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:02:05,570 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:02:05,879 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:02:06,159 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:02:06,410 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:02:06,717 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:02:06,968 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:02:07,262 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:02:07,577 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:02:07,898 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:02:08,167 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:02:08,427 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:02:08,678 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:02:09,102 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:02:09,395 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? false
+2010-04-16 22:02:09,656 [Device List Monitor] DEBUG Studio for Android - Device changed: emulator-5554
+2010-04-16 22:02:09,678 [Worker-7] DEBUG Studio for Android - Waiting Emulator.... avd2.0.1 serial: emulator-5554 online? true
+2010-04-16 22:02:09,679 [Worker-7] DEBUG Studio for Android - Emulator instance is now up and running... avd2.0.1
+2010-04-16 22:02:09,685 [Worker-7] DEBUG Studio for Android - Finished Execution of the start emulator service... :avd2.0.1 Status => Status OK: org.eclipse.core.runtime code=0 OK null
+2010-04-16 22:02:09,686 [Worker-7] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Status of the launch service: Status OK: org.eclipse.core.runtime code=0 OK null
+2010-04-16 22:02:09,704 [Instance Event Manager] INFO  Studio for Android - The android device instance status was updated: avd2.0.1 Status: com.motorola.studio.android.emulator.device.status.online
+2010-04-16 22:02:09,704 [Instance Event Manager] INFO  Studio for Android - The emulator avd2.0.1 transitioned to started state. Try to estabilish a VNC connection...
+2010-04-16 22:02:09,705 [Thread-21] INFO  Studio for Android - Open and move focus to the emulator view
+2010-04-16 22:02:10,172 [Thread-22] DEBUG Studio for Android - Application Changed: system_process
+2010-04-16 22:02:19,648 [Thread-30] DEBUG Studio for Android - Application Changed: jp.co.omronsoft.openwnn
+2010-04-16 22:02:19,881 [Thread-32] DEBUG Studio for Android - Application Changed: com.android.phone
+2010-04-16 22:02:20,255 [Thread-33] DEBUG Studio for Android - Application Changed: android.process.acore
+2010-04-16 22:02:20,260 [Thread-33] DEBUG Studio for Android - Completely Up Device: emulator-5554
+2010-04-16 22:02:20,254 [Monitor] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Delegating launch session to ADT... 
+2010-04-16 22:02:20,347 [Thread-37] DEBUG Studio for Android - Application Changed: com.android.settings
+2010-04-16 22:02:26,478 [Thread-40] DEBUG Studio for Android - Application Changed: com.android.mms
+2010-04-16 22:02:30,160 [Thread-43] DEBUG Studio for Android - Application Changed: com.android.alarmclock
+2010-04-16 22:02:37,306 [Thread-46] DEBUG Studio for Android - Application Changed: android.process.media
+2010-04-16 22:02:41,019 [Thread-49] DEBUG Studio for Android - Application Changed: com.android.email
+2010-04-16 22:02:43,488 [Thread-52] DEBUG Studio for Android - Application Changed: com.svox.pico
+2010-04-16 22:02:45,388 [Thread-55] DEBUG Studio for Android - Application Changed: com.basior.learning
+2010-04-17 00:01:12,792 [Worker-19] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main (1) mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@71253004
+2010-04-17 00:01:12,796 [Worker-19] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-17 00:01:18,705 [Thread-702] DEBUG Studio for Android - Application Changed: com.basior.learning
+2010-04-17 00:01:29,988 [Worker-33] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main (1) mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@17b6e2da
+2010-04-17 00:01:29,989 [Worker-33] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-17 00:02:18,083 [Worker-33] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main (1) mode:debug launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@31a9df7b
+2010-04-17 00:02:18,085 [Worker-33] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-17 00:02:23,026 [Thread-720] DEBUG Studio for Android - Application Changed: com.basior.learning
+2010-04-17 00:02:51,951 [Worker-31] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main (1) mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@155320b8
+2010-04-17 00:02:51,956 [Worker-31] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-17 00:03:26,709 [Worker-32] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main (1) mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@4854a2b2
+2010-04-17 00:03:26,711 [Worker-32] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-17 00:03:37,831 [Worker-31] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main (1) mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@1d494e25
+2010-04-17 00:03:37,832 [Worker-31] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-17 00:03:44,110 [Thread-749] DEBUG Studio for Android - Application Changed: com.basior.learning
+2010-04-17 00:04:23,250 [Worker-31] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main (1) mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@20c64ba
+2010-04-17 00:04:23,252 [Worker-31] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-17 00:04:28,903 [Thread-759] DEBUG Studio for Android - Application Changed: com.basior.learning
+2010-04-17 00:07:27,457 [Worker-27] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main (1) mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@6c1fa00d
+2010-04-17 00:07:27,470 [Worker-27] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-17 00:07:32,993 [Worker-27] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main (1) mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@7551cc85
+2010-04-17 00:07:32,994 [Worker-27] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-17 00:07:40,121 [Thread-844] DEBUG Studio for Android - Application Changed: com.basior.learning
+2010-04-17 00:08:19,135 [Worker-27] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main (1) mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@6e95500b
+2010-04-17 00:08:19,145 [Worker-27] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-17 00:08:23,117 [Worker-19] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main (1) mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@155be740
+2010-04-17 00:08:23,120 [Worker-19] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-17 00:08:29,260 [Thread-869] DEBUG Studio for Android - Application Changed: com.basior.learning
+2010-04-17 00:09:39,019 [Worker-33] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main (1) mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@37f0d91
+2010-04-17 00:09:39,022 [Worker-33] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-17 00:09:42,545 [Worker-34] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main (1) mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@489de976
+2010-04-17 00:09:42,546 [Worker-34] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-17 00:09:48,769 [Thread-889] DEBUG Studio for Android - Application Changed: com.basior.learning
+2010-04-17 00:10:32,590 [Worker-34] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main (1) mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@6866c111
+2010-04-17 00:10:32,591 [Worker-34] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-17 00:10:37,682 [Worker-31] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main (1) mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@6d03a4e
+2010-04-17 00:10:37,686 [Worker-31] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-17 00:10:44,736 [Thread-918] DEBUG Studio for Android - Application Changed: com.basior.learning
+2010-04-17 00:11:21,102 [Worker-19] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main (1) mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@5b0a0bf5
+2010-04-17 00:11:21,109 [Worker-19] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-17 00:11:25,964 [Worker-31] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main (1) mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@7abe288e
+2010-04-17 00:11:25,966 [Worker-31] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-17 00:11:32,017 [Thread-945] DEBUG Studio for Android - Application Changed: com.basior.learning
+2010-04-17 00:12:58,510 [Worker-32] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main (1) mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@5748228f
+2010-04-17 00:12:58,516 [Worker-32] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-17 00:13:05,912 [Worker-19] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main (1) mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@56e463b4
+2010-04-17 00:13:05,914 [Worker-19] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-17 00:13:12,027 [Thread-996] DEBUG Studio for Android - Application Changed: com.basior.learning
+2010-04-17 00:15:04,837 [Worker-19] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main (1) mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@341e5aba
+2010-04-17 00:15:04,844 [Worker-19] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-17 00:15:11,940 [Thread-1037] DEBUG Studio for Android - Application Changed: com.basior.learning
+2010-04-17 00:16:05,626 [Worker-32] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main (1) mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@76c03bfa
+2010-04-17 00:16:05,628 [Worker-32] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-17 00:16:11,315 [Worker-34] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main (1) mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@6926c68b
+2010-04-17 00:16:11,316 [Worker-34] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-17 00:16:19,926 [Thread-1067] DEBUG Studio for Android - Application Changed: com.basior.learning
+2010-04-17 00:18:15,390 [Worker-32] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main (1) mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@2d3f91c7
+2010-04-17 00:18:15,392 [Worker-32] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-17 00:18:17,709 [Worker-34] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main (1) mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@62822511
+2010-04-17 00:18:17,710 [Worker-34] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-17 00:18:23,175 [Thread-1114] DEBUG Studio for Android - Application Changed: com.basior.learning
+2010-04-17 00:40:44,887 [Worker-33] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main (2) mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@52d9dd81
+2010-04-17 00:40:44,888 [Worker-33] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-17 00:40:51,082 [Thread-1304] DEBUG Studio for Android - Application Changed: com.basior.learning
+2010-04-17 00:41:07,385 [Worker-36] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main (2) mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@437fe6b3
+2010-04-17 00:41:07,386 [Worker-36] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-17 00:41:12,806 [Worker-33] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main (2) mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@2000e00
+2010-04-17 00:41:12,808 [Worker-33] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-17 00:42:26,114 [Worker-31] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main (2) mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@75f4feed
+2010-04-17 00:42:26,115 [Worker-31] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-17 00:42:31,778 [Thread-1327] DEBUG Studio for Android - Application Changed: com.basior.learning
+2010-04-17 00:43:56,850 [Worker-37] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main (2) mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@3d482335
+2010-04-17 00:43:56,853 [Worker-37] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-17 00:44:17,164 [Worker-37] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main (2) mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@3f731eeb
+2010-04-17 00:44:17,167 [Worker-37] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-17 00:44:23,368 [Thread-1349] DEBUG Studio for Android - Application Changed: com.basior.learning
+2010-04-17 00:45:06,605 [Worker-34] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main (2) mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@6dca5ef4
+2010-04-17 00:45:06,606 [Worker-34] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-17 00:45:10,377 [Worker-31] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main (2) mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@522eb3e5
+2010-04-17 00:45:10,380 [Worker-31] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-17 00:45:17,287 [Thread-1368] DEBUG Studio for Android - Application Changed: com.basior.learning
+2010-04-17 00:46:23,784 [Worker-33] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main (2) mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@7a248f40
+2010-04-17 00:46:23,785 [Worker-33] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-17 00:46:43,060 [Worker-31] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main (2) mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@2f199b81
+2010-04-17 00:46:43,063 [Worker-31] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-17 00:46:48,970 [Thread-1394] DEBUG Studio for Android - Application Changed: com.basior.learning
+2010-04-17 00:47:59,693 [Worker-37] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main (2) mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@137d22f0
+2010-04-17 00:47:59,697 [Worker-37] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-17 00:48:06,736 [Thread-1405] DEBUG Studio for Android - Application Changed: com.basior.learning
+2010-04-17 00:48:19,428 [Thread-1408] DEBUG Studio for Android - Application Changed: jp.co.omronsoft.openwnn
+2010-04-17 00:48:35,232 [Thread-1411] DEBUG Studio for Android - Application Changed: jp.co.omronsoft.openwnn
+2010-04-17 00:48:45,548 [Thread-1414] DEBUG Studio for Android - Application Changed: jp.co.omronsoft.openwnn
+2010-04-17 00:55:41,718 [Worker-33] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main (2) mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@1e02348e
+2010-04-17 00:55:41,720 [Worker-33] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-17 00:55:54,450 [Worker-31] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main (2) mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@7d0e5306
+2010-04-17 00:55:54,452 [Worker-31] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-17 00:56:01,106 [Thread-1612] DEBUG Studio for Android - Application Changed: com.basior.learning
+2010-04-17 00:58:45,351 [Worker-37] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main (2) mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@21651dde
+2010-04-17 00:58:45,352 [Worker-37] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: avd2.0.1
+2010-04-17 00:58:52,028 [Thread-1644] DEBUG Studio for Android - Application Changed: com.basior.learning
+2010-04-17 00:59:56,520 [Device List Monitor] DEBUG Studio for Android - Device connected: 040376680D01701B
+2010-04-17 01:00:06,687 [Device List Monitor] DEBUG Studio for Android - Device changed: 040376680D01701B
+2010-04-17 01:00:06,876 [Thread-1645] DEBUG Studio for Android - Application Changed: com.google.android.stardroid
+2010-04-17 01:00:06,888 [Thread-1646] DEBUG Studio for Android - Application Changed: com.google.android.apps.uploader
+2010-04-17 01:00:13,533 [Worker-31] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main (2) mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@bf4696f
+2010-04-17 01:00:13,544 [Worker-31] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: 040376680D01701B
+2010-04-17 01:01:19,658 [Worker-33] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main (2) mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@3ffd76b0
+2010-04-17 01:01:19,660 [Worker-33] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: 040376680D01701B
+2010-04-17 01:04:18,789 [Worker-36] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - Launch Android Application using Studio for Android wizard. Configuration: com.basior.learning.Main (2) mode:run launch: com.android.ide.eclipse.adt.internal.launch.AndroidLaunch@23bb1029
+2010-04-17 01:04:18,790 [Worker-36] INFO  class com.motorola.studio.android.launch.StudioAndroidConfigurationDelegate - AVD where the application will be executed: 040376680D01701B
+2010-04-17 01:08:07,605 [Device List Monitor] DEBUG Studio for Android - Device disconnected: 040376680D01701B

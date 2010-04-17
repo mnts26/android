@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+activated,editor,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1271458715677
+closed,editor,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.ClassFileEditor",1271458715678
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.paste",1271458719255
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.delete.line",1271458722447
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.file.save",1271458723542
+executed,command,com.motorola.studio.android.launch,1.1.0.release,"com.motorola.studio.android.launch.android.app.run",1271458725338
+run,application_management,com.motorola.studio.android.launch,1.1.0.release,"device=emulator|use_vdl=n|prj_target=Android 2.0.1|target=Android 2.0.1",1271458725360
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271458731930
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271458768536
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1271458768566
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271458808162
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271458813471
+run,application_management,com.motorola.studio.android.launch,1.1.0.release,"device=handset|use_vdl=n|prj_target=Android 2.0.1",1271458813553
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271458813734
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271458816555
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271458839235
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271458878384
+activated,editor,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1271458878436
+run,application_management,com.motorola.studio.android.launch,1.1.0.release,"device=handset|use_vdl=n|prj_target=Android 2.0.1",1271458879686
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271458879806
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1271458882365
+activated,view,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.PackageExplorer",1271458971049
+opened,editor,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1271458986086
+activated,editor,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1271458986210
+activated,view,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.PackageExplorer",1271458986864

@@ -1,0 +1,13 @@
+package com.basior.learning.CustomList;
+
+import java.util.List;
+
+import android.content.Context;
+import android.widget.ArrayAdapter;
+
+public class CustomListAdapter {
+
+	
+
+	
+}
