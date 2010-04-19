@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+<RelativeLayout android:id="@+id/RelativeLayout01" android:layout_width="wrap_content" android:layout_height="wrap_content"><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ButtonShort" android:text="A short toast please" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"></Button><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="A LONG TOAST please" android:id="@+id/ButtonLong" android:layout_alignParentTop="true" android:layout_toRightOf="@id/ButtonShort"></Button><Button android:layout_below="@id/ButtonLong" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ButtonCustom" android:text="Custom" android:layout_alignParentTop="true" android:layout_toRightOf="@id/ButtonLong"></Button>
+</RelativeLayout>
+<ImageView android:id="@+id/ImageView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/marzena_aligator" android:scaleType="centerInside"></ImageView>
+
+
+</LinearLayout>
