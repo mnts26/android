@@ -3,9 +3,9 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    >
+    android:id="@+id/LinearLayout01">
 
-<RelativeLayout android:id="@+id/RelativeLayout01" android:layout_width="wrap_content" android:layout_height="wrap_content"><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ButtonShort" android:text="A short toast please" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"></Button><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="A LONG TOAST please" android:id="@+id/ButtonLong" android:layout_alignParentTop="true" android:layout_toRightOf="@id/ButtonShort"></Button><Button android:layout_below="@id/ButtonLong" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ButtonCustom" android:text="Custom" android:layout_alignParentTop="true" android:layout_toRightOf="@id/ButtonLong"></Button>
+<RelativeLayout android:id="@+id/RelativeLayout01" android:layout_width="wrap_content" android:layout_height="wrap_content"><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ButtonShort" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:text="Short toast"></Button><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ButtonLong" android:layout_alignParentTop="true" android:layout_toRightOf="@id/ButtonShort" android:text="LONG TOAST"></Button><Button android:layout_below="@id/ButtonLong" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ButtonCustom" android:text="Custom" android:layout_alignParentTop="true" android:layout_toRightOf="@id/ButtonLong"></Button>
 </RelativeLayout>
 <ImageView android:id="@+id/ImageView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/marzena_aligator" android:scaleType="centerInside"></ImageView>
 
