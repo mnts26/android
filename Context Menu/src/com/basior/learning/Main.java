@@ -48,6 +48,7 @@ public class Main extends Activity implements OnItemSelectedListener {
 			@Override
 			public void onCreateContextMenu(ContextMenu menu, View v,
 					ContextMenuInfo menuInfo) {
+				menu.setHeaderTitle("My menu");
 				menu.add(0, Menu.FIRST+1, 0, "Send");
 				menu.add(0, Menu.FIRST+2, 0, "Zoom in");
 				menu.add(0, Menu.FIRST+3, 0, "Zoom out");
