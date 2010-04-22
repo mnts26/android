@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 public class Main extends Activity {
 	Context context;
+	View customToast;
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -40,10 +41,11 @@ public class Main extends Activity {
 			@Override
 			public void onClick(View v) {
 				Toast toast = new Toast(context);
-				toast.setView(new EditText(context));
+				toast.setView(customToast);
 				toast.show();
 			}
 		});
-        
+     
+        customToast = getLayoutInflater().inflate(R.layout.custom, null);
     }
 }

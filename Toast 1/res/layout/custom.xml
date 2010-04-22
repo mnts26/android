@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/CustomToast" xmlns:android="http://schemas.android.com/apk/res/android">
+<ImageView android:id="@+id/ImageView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="  " android:src="@android:drawable/ic_dialog_alert" android:background="#FF0000"></ImageView>
+<TextView android:id="@+id/TextView01" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_toRightOf="@id/ImageView01" android:layout_alignBaseline="@id/ImageView01" android:layout_centerVertical="true" android:text="This is a custom Toast" android:textColor="#ff0000"></TextView>
+</RelativeLayout>
+
+
