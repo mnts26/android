@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="horizontal">
+
+
+	<TextView android:layout_width="40dip" android:text="pl"
+		android:id="@+id/TextViewCode" android:layout_height="fill_parent"
+		android:layout_centerHorizontal="true" android:layout_centerVertical="true"
+		android:layout_alignParentLeft="true" android:gravity="center_vertical"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		 android:paddingLeft="6dip"
+		android:minHeight="?android:attr/listPreferredItemHeight" />
+	<View android:id="@+id/View01" android:background="#aaaaaa"
+		android:layout_height="fill_parent" android:layout_toRightOf="@id/TextViewCode"
+		android:layout_width="12px"></View>
+	<TextView android:layout_width="wrap_content" android:text="Poland"
+		android:id="@+id/TextViewCountry" android:layout_height="fill_parent"
+		android:layout_alignParentRight="true" android:layout_toRightOf="@id/View01"
+		android:layout_centerHorizontal="true" android:layout_centerVertical="true"
+		android:layout_centerInParent="false" android:gravity="center_vertical"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		 android:paddingLeft="6dip"
+		android:minHeight="?android:attr/listPreferredItemHeight" />
+</RelativeLayout>

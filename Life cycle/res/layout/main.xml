@@ -15,7 +15,8 @@
 			android:layout_height="wrap_content" android:text="Toast!"
 			android:layout_alignParentTop="true"
 			android:layout_toRightOf="@id/ButtonAlert" android:id="@+id/ButtonToast" android:layout_alignParentRight="false"></Button>
-	<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_toRightOf="@id/ButtonToast" android:text="Clear log" android:id="@+id/ButtonClear"></Button>
+	<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_toRightOf="@id/ButtonToast" android:text="Clear log" android:id="@+id/ButtonClear" android:layout_alignParentRight="false"></Button>
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_toRightOf="@id/ButtonClear" android:id="@+id/ButtonClose" android:text="Close"></Button>
 </RelativeLayout>
 	<Button android:layout_width="wrap_content" android:layout_height="wrap_content"
 		android:text="Log" android:id="@+id/ButtonLog"

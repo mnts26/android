@@ -11,6 +11,7 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Resources.Theme;
 import android.os.Bundle;
 import android.text.method.DateTimeKeyListener;
@@ -24,7 +25,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class Main extends Activity {
-	static StringBuilder buf = new StringBuilder();
     /** Called when the activity is first created. */
 	EditText text;
 	EditText userText;
@@ -38,8 +38,7 @@ public class Main extends Activity {
         text = (EditText) findViewById(R.id.EditText01);
         userText = (EditText) findViewById(R.id.EditUser);
         context = this;
-        setupButtons();
-        
+        setupButtons();      
         log("[Create]");
     }
 
@@ -51,7 +50,8 @@ public class Main extends Activity {
         b.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				showLog("Alert");
+				log("Alert");
+				showLog();
 				new AlertDialog.Builder(context).setMessage("And now?").setPositiveButton("OK", new DialogInterface.OnClickListener() {
 					@Override
 					public void onClick(DialogInterface dialog, int which) {
@@ -64,7 +64,8 @@ public class Main extends Activity {
         b.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				showLog("Toast");
+				log("Toast");
+				showLog();
 				Toast.makeText(context, "Happy toast!", Toast.LENGTH_SHORT).show();
 			}
 		});
@@ -73,7 +74,8 @@ public class Main extends Activity {
         b.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				showLog(userText.getText().toString());
+				log(userText.getText().toString());
+				showLog();
 				userText.setText("");
 			}
 		});
@@ -82,8 +84,18 @@ public class Main extends Activity {
         b.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				buf = new StringBuilder();
+				clearLog();
 				showLog();
+			}
+
+
+		});
+        
+        b = (Button) findViewById(R.id.ButtonClose);
+        b.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				finish();
 			}
 		});
 	}
@@ -91,21 +103,30 @@ public class Main extends Activity {
 
 
 	private void log(String msg) {
-		DateFormat d = DateFormat.getTimeInstance(DateFormat.MEDIUM, Locale.ENGLISH);
-		buf.append(d.format(new Date()).toString());
-		buf.append(": " + msg);
+		SharedPreferences pref = getPreferences(0);
+		StringBuffer buf = new StringBuffer();
+		
+		buf.append(pref.getString("log", ""));		
+		buf.append(msg);
         buf.append('\n');
+        
+        SharedPreferences.Editor editor = pref.edit();
+        editor.putString("log", buf.toString());
+        editor.commit();
 	}
+	
+	private void clearLog() {
+		SharedPreferences.Editor editor = getPreferences(0).edit();
+		editor.putString("log", "");
+		editor.commit();
+	}
+	
 	
 	private void showLog() {
-		text.setText(buf.toString());
+		SharedPreferences pref = getPreferences(0);
+		text.setText(pref.getString("log", ""));
 	}
 	
-	private void showLog(String msg) {
-		log(msg);
-		showLog();
-	}
-
 	@Override
 	protected void onRestart() {
 		super.onRestart();
@@ -129,7 +150,6 @@ public class Main extends Activity {
 	protected void onPause() {
 		super.onPause();
 		log("[Pause]");
-		showLog();
 	}
 
 	
@@ -144,5 +164,24 @@ public class Main extends Activity {
 		super.onDestroy();
 		log("[Destroy]");
 	}
+
+
+
+	@Override
+	protected void onRestoreInstanceState(Bundle savedInstanceState) {
+		log("*Restore state*");
+		super.onRestoreInstanceState(savedInstanceState);
+	}
+
+	@Override
+	protected void onSaveInstanceState(Bundle outState) {
+		super.onSaveInstanceState(outState);
+		outState.putString("A", "B");
+		log("*Save state*");
+	}
+    
+    
+    
+    
     
 }
