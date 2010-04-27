@@ -34,7 +34,7 @@ public class Main extends Activity implements OnClickListener {
 	private static final String PREFS_FILTER = "filter";
 	private static final String PREFS_SCROLL_Y = "scroll Y";
 	EditText filterText;
-	ArrayList<Country> countries;
+	ArrayList<Country> countries = getCountries();
 	MyAdapter<Country> adapter;
 	ListView list;
     /** Called when the activity is first created. */
