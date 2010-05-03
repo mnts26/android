@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="hello">Welcome to landscape</string>
+    <string name="app_name">Landscape App</string>
+
+<string name="button_name_land">I like landscape</string>
+    <string name="button_name_port">I like portrait</string>
+</resources>

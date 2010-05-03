@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:id="@+id/RelativeLayout01" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+<EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:text="Consume event" android:id="@+id/ConsumeEventLeft" android:inputType="text"></EditText>
+<EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentTop="true" android:id="@+id/ConsumeEventRight" android:hint="Consume event" android:inputType="text"></EditText>
+<EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_alignParentLeft="true" android:id="@+id/InputManagerLeft" android:text="Input manager" android:inputType="text"></EditText>
+<EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:id="@+id/InputManagerRight" android:hint="Input Manager" android:inputType="text"></EditText>
+<EditText android:id="@+id/EditText01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Default behaviour" android:layout_above="@id/InputManagerLeft" android:layout_below="@id/ConsumeEventLeft" android:gravity="center_vertical|center_horizontal" android:layout_centerHorizontal="true"></EditText>
+<Button android:id="@+id/Button01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hide keyboard" android:layout_toRightOf="@id/EditText01" android:layout_above="@id/InputManagerLeft" android:layout_below="@id/ConsumeEventLeft"></Button>
+</RelativeLayout>

@@ -148,16 +148,16 @@ public class Main extends Activity {
 
 	@Override
 	protected void onRestoreInstanceState(Bundle savedInstanceState) {
-		SharedPreferences.Editor prefsEditor = getPreferences(MODE_PRIVATE).edit();
-		prefsEditor.putString(NON_SAVED_TEXT, editor.getText().toString());
-		prefsEditor.commit();
+		SharedPreferences prefs = getPreferences(MODE_PRIVATE);
+		editor.setText(prefs.getString(NON_SAVED_TEXT, ""));
 		super.onRestoreInstanceState(savedInstanceState);
 	}
 
 	@Override
 	protected void onSaveInstanceState(Bundle outState) {
-		SharedPreferences prefs = getPreferences(MODE_PRIVATE);
-		editor.setText(prefs.getString(NON_SAVED_TEXT, ""));
+		SharedPreferences.Editor prefsEditor = getPreferences(MODE_PRIVATE).edit();
+		prefsEditor.putString(NON_SAVED_TEXT, editor.getText().toString());
+		prefsEditor.commit();	
 		super.onSaveInstanceState(outState);
 	}
     
