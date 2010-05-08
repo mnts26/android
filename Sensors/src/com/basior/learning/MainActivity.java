@@ -1,0 +1,176 @@
+package com.basior.learning;
+
+import java.util.ArrayList;
+
+import android.app.Activity;
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ListView;
+import android.widget.Spinner;
+import android.widget.TextView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.AdapterView.OnItemSelectedListener;
+
+public class MainActivity extends Activity implements SensorEventListener {
+    /** Called when the activity is first created. */
+	
+	Spinner spinner;
+	Spinner rateSpinner;
+	ArrayList<SensorWrapper> sensors = new ArrayList<SensorWrapper>();
+	Sensor currentSensor;
+	
+	TextView textViewName;
+	TextView textViewResolution;
+	TextView textViewMaxRange;
+	TextView textViewPower;
+	TextView textViewValue1;
+	TextView textViewValue2;
+	TextView textViewValue3;
+	
+	SensorManager sm;
+	
+	int currentRate = 0;
+	
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
+
+		textViewName = (TextView) findViewById(R.id.TextViewName);
+		textViewResolution = (TextView) findViewById(R.id.TextViewResolution);
+		textViewMaxRange = (TextView) findViewById(R.id.TextViewMaxRange);
+		textViewPower = (TextView) findViewById(R.id.TextViewPower);
+		textViewValue1 = (TextView) findViewById(R.id.TextViewValue1);
+		textViewValue2 = (TextView) findViewById(R.id.TextViewValue2);
+		textViewValue3 = (TextView) findViewById(R.id.TextViewValue3);		
+		
+		sm = (SensorManager) getSystemService(SENSOR_SERVICE);
+		
+		setupRateSpinner();
+		setupSensorSpinner();
+    }
+
+
+	private void setupRateSpinner() {
+		ArrayAdapter<SensorRate> adapter = new ArrayAdapter<SensorRate>(this, android.R.layout.simple_spinner_item, SensorRate.values());
+		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		
+		rateSpinner = (Spinner)findViewById(R.id.Spinner02);
+		rateSpinner.setAdapter(adapter);
+		rateSpinner.setOnItemSelectedListener(rateSpinnerListener);
+	}
+
+
+	private void setupSensorSpinner() {
+		for (Sensor s: sm.getSensorList(Sensor.TYPE_ALL))
+		{
+			sensors.add(new SensorWrapper(s));			
+		}
+		
+		ArrayAdapter<SensorWrapper> adapter = new ArrayAdapter<SensorWrapper>(this, android.R.layout.simple_spinner_item, sensors);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+               
+		spinner = (Spinner) findViewById(R.id.Spinner01);
+		spinner.setAdapter(adapter);
+		spinner.setOnItemSelectedListener(sensorSpinnerListener);
+	}
+
+	
+	private final OnItemSelectedListener rateSpinnerListener = new OnItemSelectedListener() {
+		@Override
+		public void onItemSelected(AdapterView<?> arg0, View arg1,
+				int position, long arg3) {
+			currentRate = SensorRate.values()[position].getValue();
+			unregisterSensor();		
+			registerSensor();
+		}
+
+		@Override
+		public void onNothingSelected(AdapterView<?> arg0) {
+			// TODO Auto-generated method stub
+			
+		}
+	};
+	
+	private final OnItemSelectedListener sensorSpinnerListener = new OnItemSelectedListener() {
+		@Override
+		public void onItemSelected(AdapterView<?> arg0, View arg1, int position,
+				long arg3) {
+			Sensor s = sensors.get(position).getSensor();
+			
+			textViewName.setText(s.getName());
+			textViewPower.setText("" + s.getPower());
+			textViewResolution.setText("" + s.getResolution());
+			textViewMaxRange.setText("" + s.getMaximumRange());
+			
+			if (s == currentSensor)
+				return;
+				
+			unregisterSensor();		
+			currentSensor = s;		
+			registerSensor();
+		}
+
+		@Override
+		public void onNothingSelected(AdapterView<?> arg0) {
+		}
+	};
+	
+
+
+	private void registerSensor() {
+		if (currentSensor != null)
+		{
+			sm.registerListener(this, currentSensor, currentRate);
+		}
+	}
+
+
+	private void unregisterSensor() {
+		if (currentSensor != null)
+		{
+			sm.unregisterListener(this);
+		}
+	}
+
+
+	@Override
+	public void onAccuracyChanged(Sensor arg0, int arg1) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	@Override
+	public void onSensorChanged(SensorEvent sensorEvent) {
+		textViewValue1.setText("" + sensorEvent.values[0]);
+		textViewValue2.setText("" + sensorEvent.values[1]);
+		textViewValue3.setText("" + sensorEvent.values[2]);
+	}
+
+
+	@Override
+	protected void onPause() {
+		super.onPause();
+		unregisterSensor();
+	}
+
+
+	@Override
+	protected void onResume() {
+		super.onResume();
+		registerSensor();
+	}
+
+	
+
+}
