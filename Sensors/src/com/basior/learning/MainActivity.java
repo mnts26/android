@@ -3,6 +3,7 @@ package com.basior.learning;
 import java.util.ArrayList;
 
 import android.app.Activity;
+import android.content.Context;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -17,6 +18,7 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.AdapterView.OnItemSelectedListener;
 
@@ -36,7 +38,12 @@ public class MainActivity extends Activity implements SensorEventListener {
 	TextView textViewValue2;
 	TextView textViewValue3;
 	
+	Button button;
+	
 	SensorManager sm;
+	SensorRunner runner;
+	
+	Context context;
 	
 	int currentRate = 0;
 	
@@ -45,6 +52,8 @@ public class MainActivity extends Activity implements SensorEventListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
+        context = this;
+        
 		textViewName = (TextView) findViewById(R.id.TextViewName);
 		textViewResolution = (TextView) findViewById(R.id.TextViewResolution);
 		textViewMaxRange = (TextView) findViewById(R.id.TextViewMaxRange);
@@ -52,12 +61,28 @@ public class MainActivity extends Activity implements SensorEventListener {
 		textViewValue1 = (TextView) findViewById(R.id.TextViewValue1);
 		textViewValue2 = (TextView) findViewById(R.id.TextViewValue2);
 		textViewValue3 = (TextView) findViewById(R.id.TextViewValue3);		
-		
+	
 		sm = (SensorManager) getSystemService(SENSOR_SERVICE);
 		
 		setupRateSpinner();
 		setupSensorSpinner();
+		setupButton();
     }
+
+
+	private void setupButton() {
+		button = (Button)findViewById(R.id.ButtonStartStop);
+		if (runner != null)
+		{
+			button.setText("Stop");
+			button.setOnClickListener(stopListener);
+		}
+		else
+		{
+			button.setText("Start");
+			button.setOnClickListener(startListener);
+		}
+	}
 
 
 	private void setupRateSpinner() {
@@ -125,13 +150,37 @@ public class MainActivity extends Activity implements SensorEventListener {
 		}
 	};
 	
-
+	private final View.OnClickListener startListener = new View.OnClickListener() {
+		@Override
+		public void onClick(View v) {
+			runner = new SensorRunner(context, sm, currentSensor, currentRate);
+			startRunner();
+			button.setText("Stop");
+			button.setOnClickListener(stopListener);
+		}
+	};
+	
+	private final View.OnClickListener stopListener = new View.OnClickListener() {
+		@Override
+		public void onClick(View v) {
+			stopRunner();
+			Toast.makeText(context, "Gathered samples:" + runner.getNumberOfSamples(), Toast.LENGTH_SHORT).show();
+			runner = null;
+			button.setText("Start");
+			button.setOnClickListener(startListener);
+		}
+	};
 
 	private void registerSensor() {
 		if (currentSensor != null)
 		{
 			sm.registerListener(this, currentSensor, currentRate);
 		}
+	}
+
+	private void startRunner() {
+		if (runner != null)
+			runner.start();
 	}
 
 
@@ -142,7 +191,11 @@ public class MainActivity extends Activity implements SensorEventListener {
 		}
 	}
 
-
+	private void stopRunner() {
+		if (runner != null)
+			runner.stop();
+	}
+	
 	@Override
 	public void onAccuracyChanged(Sensor arg0, int arg1) {
 		// TODO Auto-generated method stub
@@ -162,6 +215,7 @@ public class MainActivity extends Activity implements SensorEventListener {
 	protected void onPause() {
 		super.onPause();
 		unregisterSensor();
+		stopRunner();
 	}
 
 
@@ -169,7 +223,10 @@ public class MainActivity extends Activity implements SensorEventListener {
 	protected void onResume() {
 		super.onResume();
 		registerSensor();
+		startRunner();
 	}
+
+
 
 	
 

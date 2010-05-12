@@ -1,6 +1,8 @@
 package com.basior.learning;
 
 import java.util.Date;
+import java.util.LinkedList;
+import java.util.List;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -9,54 +11,131 @@ import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
+import android.util.Log;
 
-public class SensorRunner implements SensorEventListener {
+public class SensorRunner implements SensorEventListener, Runnable {
 
-	private static final int VERSION = 0;
-	private static final String NAME = null;
+	private static final String MEASURE_TABLE = "measure";
+	private static final String RUN_DEFINITION_TABLE = "runDefinition";
+	private static final int VERSION = 1;
+	private static final String NAME = "sensors.db";
 	
 	private SQLiteDatabase db;
-	private Context context;
 	private SensorManager sm;
 	private Sensor sensor;
 	private int rate;
-	private int runId;
+	private long runId;
+	private long numberOfsamples;
+	private boolean shouldRun;
 	
+	private MySQLiteHelper helper;
 	
-	private SensorRunner(Context context,SensorManager sm, Sensor sensor, int rate) {
+	private List<Sample> samples;
+	
+	Thread thread;
+	
+	public SensorRunner(Context context,SensorManager sm, Sensor sensor, int rate) {
 		super();
-		this.context = context;
 		this.sensor = sensor;
 		this.rate = rate;
 		this.sm = sm;
 		
-		db = new MySQLiteHelper(context, NAME, null, VERSION).getWritableDatabase();
-		insertRunDescription();		
+		helper = new MySQLiteHelper(context, NAME, null, VERSION);
+		db = helper.getWritableDatabase();
+		insertRunDescription();
+		numberOfsamples = 0;
 	}
 
+
+	public void run()
+	{
+		Sample sample = null;
+		
+		while(shouldRun())
+		{
+			synchronized(this) {
+				if (samples.size() == 0)
+				{
+					try {
+						wait();
+					} catch (InterruptedException e) {
+						return;
+					}
+				}
+								
+				sample = samples.remove(0);
+			}
+			
+			insertSampleIntoDb(sample);
+		}
+		
+	}
+
+
+	private void insertSampleIntoDb(Sample sample) {
+		ContentValues content = new ContentValues();
+		content.put("runId", runId);
+		content.put("timestamp", sample.timestamp);
+		content.put("value1", sample.values[0]);
+		content.put("value2", sample.values[1]);
+		content.put("value3", sample.values[2]);
+		db.insert(MEASURE_TABLE, null, content);
+		numberOfsamples++;
+	}
+
+
+	private void prepareToRun() {
+		setShouldRun(true);
+		samples = new LinkedList<Sample>();
+		db = helper.getWritableDatabase();
+		insertStartDate();		
+		sm.registerListener(this, sensor, rate);
+	}
+	
 
 	public void start()
 	{
-		sm.registerListener(this, sensor, rate);
-		// TODO: update startdt
+		prepareToRun();
+		thread = new Thread(this);
+		thread.start();
 	}
-	
 
 	public void stop()
 	{
 		sm.unregisterListener(this);
+		setShouldRun(false);
+		
+		if (thread.isAlive())
+		{
+			thread.interrupt();		
+		}
+		
+		try {
+			thread.join();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
 		insertEndDate();
 		db.close();
 	}
 
 
+	
+	private void insertStartDate() {
+		ContentValues content = new ContentValues();
+		content.put("startDt", new Date().getTime());
+		Log.d("SensorRunner", "Runid:" + runId);
+		
+		db.update(RUN_DEFINITION_TABLE, content, "runId=?", new String[] { "" + runId} );
+	}
+
 	private void insertEndDate() {
 		ContentValues content = new ContentValues();
-		content.put("endtDt", new Date().getTime());
-		// TOOD: where clause
-		db.update("main.runDefinition", content, "", null);
+		content.put("endDt", new Date().getTime());
+		String args[] = { "" + runId };
 		
-
+		db.update(RUN_DEFINITION_TABLE, content, "runId=?", args);
 	}
 
 	
@@ -65,9 +144,7 @@ public class SensorRunner implements SensorEventListener {
 		content.put("sensor", sensor.getName());
 		content.put("rate", rate);
 		
-		db.insert("main.runDefinition", "nullColumnHack", content);
-		
-		// TODO: get run id
+		runId = db.insert(RUN_DEFINITION_TABLE, "nullColumnHack", content);
 	}	
 
 	@Override
@@ -77,12 +154,33 @@ public class SensorRunner implements SensorEventListener {
 
 	@Override
 	public void onSensorChanged(SensorEvent event) {
-		ContentValues content = new ContentValues();
-		content.put("runId", runId);
-		content.put("timestamp", event.timestamp);
-		content.put("value1", event.values[0]);
-		content.put("value2", event.values[1]);
-		content.put("value3", event.values[2]);
-		db.insert("main.measure", "nullColumnHack", content);
+		Sample s = new Sample();
+		s.values[0] = event.values[0];
+		s.values[1] = event.values[1];
+		s.values[2] = event.values[2];
+		s.timestamp = event.timestamp;
+		
+		synchronized(this)
+		{
+			samples.add(s);
+			notify();
+		}
+		
 	}
+	
+	public long getNumberOfSamples() {
+		return numberOfsamples;
+	}
+
+
+	public boolean shouldRun() {
+		return shouldRun;
+	}
+
+
+	public void setShouldRun(boolean shouldRun) {
+		this.shouldRun = shouldRun;
+	}
+	
+	
 }

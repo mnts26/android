@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteDatabase.CursorFactory;
 
 public class MySQLiteHelper extends SQLiteOpenHelper {
 
-	private static final String CREATE_MEASURE_QUERY = "CREATE TABLE main.measure ( " +
+	private static final String CREATE_MEASURE_QUERY = "CREATE TABLE measure ( " +
 		    "id INTEGER PRIMARY KEY AUTOINCREMENT, " +
 		    "runId INTEGER," +
 		    "timestamp INTEGER," +
@@ -16,10 +16,8 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
 		    "value3 REAL DEFAULT (0)" +
 		    ")";
 
-	private static final String CREATE_RUN_DEFINITION_QUERY = "CREATE TABLE main.runDefinition (" +
+	private static final String CREATE_RUN_DEFINITION_QUERY = "CREATE TABLE runDefinition (" +
 		    "runId INTEGER PRIMARY KEY AUTOINCREMENT," +
-		    "startDt REAL," +
-		    "endDt REAL," +
 		    "sensor TEXT," +
 		    "rate INTEGER"+
 		")";
