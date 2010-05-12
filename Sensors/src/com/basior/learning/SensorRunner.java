@@ -18,7 +18,7 @@ public class SensorRunner implements SensorEventListener, Runnable {
 	private static final String MEASURE_TABLE = "measure";
 	private static final String RUN_DEFINITION_TABLE = "runDefinition";
 	private static final int VERSION = 1;
-	private static final String NAME = "sensors.db";
+	public static final String DBNAME = "sensors.db";
 	
 	private SQLiteDatabase db;
 	private SensorManager sm;
@@ -40,7 +40,7 @@ public class SensorRunner implements SensorEventListener, Runnable {
 		this.rate = rate;
 		this.sm = sm;
 		
-		helper = new MySQLiteHelper(context, NAME, null, VERSION);
+		helper = new MySQLiteHelper(context, DBNAME, null, VERSION);
 		db = helper.getWritableDatabase();
 		insertRunDescription();
 		numberOfsamples = 0;
@@ -88,7 +88,6 @@ public class SensorRunner implements SensorEventListener, Runnable {
 		setShouldRun(true);
 		samples = new LinkedList<Sample>();
 		db = helper.getWritableDatabase();
-		insertStartDate();		
 		sm.registerListener(this, sensor, rate);
 	}
 	
@@ -116,35 +115,18 @@ public class SensorRunner implements SensorEventListener, Runnable {
 			e.printStackTrace();
 		}
 		
-		insertEndDate();
 		db.close();
 	}
 
 
 	
-	private void insertStartDate() {
-		ContentValues content = new ContentValues();
-		content.put("startDt", new Date().getTime());
-		Log.d("SensorRunner", "Runid:" + runId);
-		
-		db.update(RUN_DEFINITION_TABLE, content, "runId=?", new String[] { "" + runId} );
-	}
-
-	private void insertEndDate() {
-		ContentValues content = new ContentValues();
-		content.put("endDt", new Date().getTime());
-		String args[] = { "" + runId };
-		
-		db.update(RUN_DEFINITION_TABLE, content, "runId=?", args);
-	}
-
 	
 	private void insertRunDescription() {
 		ContentValues content = new ContentValues();
 		content.put("sensor", sensor.getName());
 		content.put("rate", rate);
 		
-		runId = db.insert(RUN_DEFINITION_TABLE, "nullColumnHack", content);
+		runId = db.insert(RUN_DEFINITION_TABLE, null, content);
 	}	
 
 	@Override

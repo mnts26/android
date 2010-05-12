@@ -9,7 +9,10 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
+import android.os.Environment;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -23,7 +26,9 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.AdapterView.OnItemSelectedListener;
 
 public class MainActivity extends Activity implements SensorEventListener {
-    /** Called when the activity is first created. */
+    private static final int MENU_SAVE = Menu.FIRST;
+	private static final int MENU_QUIT = MENU_SAVE + 1;
+	/** Called when the activity is first created. */
 	
 	Spinner spinner;
 	Spinner rateSpinner;
@@ -41,7 +46,7 @@ public class MainActivity extends Activity implements SensorEventListener {
 	Button button;
 	
 	SensorManager sm;
-	SensorRunner runner;
+	static SensorRunner runner = null;
 	
 	Context context;
 	
@@ -227,7 +232,35 @@ public class MainActivity extends Activity implements SensorEventListener {
 	}
 
 
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		menu.add(0, MENU_SAVE, 0, "Copy").setIcon(android.R.drawable.ic_menu_save);
+		menu.add(0, MENU_QUIT, 0, "Quit").setIcon(android.R.drawable.ic_menu_close_clear_cancel);		
+		return super.onCreateOptionsMenu(menu);
+	}
 
+
+	
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch(item.getItemId())
+		{
+		case MENU_SAVE:
+			try {
+				MySQLiteHelper.copyDataBase(context, SensorRunner.DBNAME, Environment.getExternalStorageDirectory() + SensorRunner.DBNAME );
+			} catch (Throwable e) {
+				Toast.makeText(context, e.toString(), Toast.LENGTH_LONG).show();
+			}
+			return true;
+		case MENU_QUIT:
+			finish();
+			return true;
+		}
+		return super.onOptionsItemSelected(item);
+	}
+
+
+	
 	
 
 }

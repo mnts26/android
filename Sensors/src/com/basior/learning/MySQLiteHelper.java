@@ -1,9 +1,15 @@
 package com.basior.learning;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.database.sqlite.SQLiteDatabase.CursorFactory;
+import android.provider.OpenableColumns;
 
 public class MySQLiteHelper extends SQLiteOpenHelper {
 
@@ -37,6 +43,35 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
 	@Override
 	public void onUpgrade(SQLiteDatabase db, int arg1, int arg2) {
 		onCreate(db);
+	}
+
+	
+	static public void copyDataBase(Context context, String dbName, String toPath) throws Throwable
+ {
+		FileInputStream fis = null;
+		FileOutputStream fos = null;
+
+		try {
+			fis = new FileInputStream(
+					"/data/data/com.basior.learning/databases/" + dbName);
+			fos = new FileOutputStream(toPath);
+
+			int n;
+			byte[] buffer = new byte[1024];
+			while ((n = fis.read(buffer)) > 0) {
+				fos.write(buffer, 0, n);
+			}
+		} finally {
+			if (fis != null)
+				try {
+					fis.close();
+				} finally {
+					if (fos != null) {
+						fos.flush();
+						fos.close();
+					}
+				}
+		}
 	}
 
 }
