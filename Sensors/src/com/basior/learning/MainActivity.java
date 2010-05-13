@@ -247,8 +247,9 @@ public class MainActivity extends Activity implements SensorEventListener {
 		{
 		case MENU_SAVE:
 			try {
-				MySQLiteHelper.copyDataBase(context, SensorRunner.DBNAME, Environment.getExternalStorageDirectory() + SensorRunner.DBNAME );
+				MySQLiteHelper.copyDataBase(context, SensorRunner.DBNAME, Environment.getExternalStorageDirectory() + "/" + SensorRunner.DBNAME );
 			} catch (Throwable e) {
+				Log.d("Exception", e.toString());
 				Toast.makeText(context, e.toString(), Toast.LENGTH_LONG).show();
 			}
 			return true;
