@@ -10,19 +10,15 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.os.Environment;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.widget.AdapterView.OnItemClickListener;
 import android.widget.AdapterView.OnItemSelectedListener;
 
 public class MainActivity extends Activity implements SensorEventListener {
@@ -184,7 +180,7 @@ public class MainActivity extends Activity implements SensorEventListener {
 	}
 
 	private void startRunner() {
-		if (runner != null)
+		if (runner != null && !runner.isRunning())
 			runner.start();
 	}
 
@@ -219,8 +215,13 @@ public class MainActivity extends Activity implements SensorEventListener {
 	@Override
 	protected void onPause() {
 		super.onPause();
+		
 		unregisterSensor();
-		stopRunner();
+		if (isFinishing())
+		{
+			stopRunner();	
+		}
+		
 	}
 
 
@@ -247,7 +248,7 @@ public class MainActivity extends Activity implements SensorEventListener {
 		{
 		case MENU_SAVE:
 			try {
-				MySQLiteHelper.copyDataBase(context, SensorRunner.DBNAME, Environment.getExternalStorageDirectory() + SensorRunner.DBNAME );
+				MySQLiteHelper.copyDataBase(context, SensorRunner.DBNAME, Environment.getExternalStorageDirectory() + "/" + SensorRunner.DBNAME );
 			} catch (Throwable e) {
 				Toast.makeText(context, e.toString(), Toast.LENGTH_LONG).show();
 			}
