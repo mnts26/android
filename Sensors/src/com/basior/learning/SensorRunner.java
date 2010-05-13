@@ -26,7 +26,7 @@ public class SensorRunner implements SensorEventListener, Runnable {
 	private int rate;
 	private long runId;
 	private long numberOfsamples;
-	private boolean shouldRun;
+	private boolean isRunning;
 	
 	private MySQLiteHelper helper;
 	
@@ -51,7 +51,7 @@ public class SensorRunner implements SensorEventListener, Runnable {
 	{
 		Sample sample = null;
 		
-		while(shouldRun())
+		while(isRunning())
 		{
 			synchronized(this) {
 				if (samples.size() == 0)
@@ -85,7 +85,7 @@ public class SensorRunner implements SensorEventListener, Runnable {
 
 
 	private void prepareToRun() {
-		setShouldRun(true);
+		setRunnning(true);
 		samples = new LinkedList<Sample>();
 		db = helper.getWritableDatabase();
 		sm.registerListener(this, sensor, rate);
@@ -94,6 +94,7 @@ public class SensorRunner implements SensorEventListener, Runnable {
 
 	public void start()
 	{
+		Log.d("Sensor runner", "Start");
 		prepareToRun();
 		thread = new Thread(this);
 		thread.start();
@@ -102,7 +103,7 @@ public class SensorRunner implements SensorEventListener, Runnable {
 	public void stop()
 	{
 		sm.unregisterListener(this);
-		setShouldRun(false);
+		setRunnning(false);
 		
 		if (thread.isAlive())
 		{
@@ -116,6 +117,7 @@ public class SensorRunner implements SensorEventListener, Runnable {
 		}
 		
 		db.close();
+		Log.d("Sensor runner", "Stop");
 	}
 
 
@@ -155,13 +157,13 @@ public class SensorRunner implements SensorEventListener, Runnable {
 	}
 
 
-	public boolean shouldRun() {
-		return shouldRun;
+	public boolean isRunning() {
+		return isRunning;
 	}
 
 
-	public void setShouldRun(boolean shouldRun) {
-		this.shouldRun = shouldRun;
+	public void setRunnning(boolean shouldRun) {
+		this.isRunning = shouldRun;
 	}
 	
 	

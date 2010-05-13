@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+<EditText android:id="@+id/EditText01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="Type your db name here" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_alignParentTop="true"></EditText><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/EditText01" android:layout_centerVertical="false" android:layout_centerHorizontal="true" android:id="@+id/ButtonOpenOrCreate" android:text="Open or create"></Button>
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:id="@+id/ButtonOpen" android:text="Open" android:layout_below="@id/ButtonOpenOrCreate"></Button>
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Delete" android:layout_centerHorizontal="true" android:id="@+id/ButtonDelete" android:layout_below="@id/ButtonOpen"></Button>
+
+</RelativeLayout>
