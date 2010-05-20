@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:id="@+id/RelativeLayout01"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true" android:id="@+id/TextViewSample"
+		style="android." android:textAppearance="?android:attr/textAppearanceLarge" android:text="Sample"></TextView>
+	<Spinner android:id="@+id/Spinner01" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_below="@id/TextViewSample"
+		android:layout_alignParentLeft="true"></Spinner><EditText android:text="@+id/EditText01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:visibility="invisible" android:id="@+id/EditTextFake" android:layout_below="@id/TextViewSample"></EditText>
+	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/TextViewSample" android:text="*" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_toRightOf="@id/Spinner01" android:layout_alignBaseline="@id/EditTextFake" android:id="@+id/TextViewAsterisk"></TextView><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_below="@id/TextViewSample" android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/TextViewEqual" android:layout_alignBaseline="@id/EditTextFake" android:text="="></TextView><EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBaseline="@id/Spinner01" android:layout_below="@id/TextViewSample" android:id="@+id/EditTextTimes" android:layout_toRightOf="@id/TextViewAsterisk" android:layout_toLeftOf="@id/TextViewEqual" android:inputType="numberDecimal" android:hint="Type" android:text="10"></EditText><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/TextViewTimes" android:layout_toRightOf="@id/TextViewAsterisk" android:gravity="center_horizontal" android:layout_toLeftOf="@id/TextViewEqual" android:layout_alignParentTop="true" android:text="Loops"></TextView><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ButtonRun" android:text="Run" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_below="@id/EditTextTimes"></Button><ListView android:layout_width="wrap_content" android:id="@+id/ListView01" android:layout_height="wrap_content" android:layout_below="@+id/ButtonRun" android:layout_alignParentLeft="true" android:layout_alignParentRight="true"></ListView>
+
+	
+	
+
+	
+
+	
+
+
+
+
+
+</RelativeLayout>
