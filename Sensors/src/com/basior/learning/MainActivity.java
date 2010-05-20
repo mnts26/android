@@ -2,6 +2,12 @@ package com.basior.learning;
 
 import java.util.ArrayList;
 
+import com.basior.learning.data.MonitorState;
+import com.basior.learning.data.RecorderState;
+import com.basior.learning.data.SensorRate;
+import com.basior.learning.data.SensorWrapper;
+import com.basior.learning.data.WakeLockType;
+
 import android.app.Activity;
 import android.content.Context;
 import android.hardware.Sensor;
@@ -10,6 +16,9 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.os.Environment;
+import android.os.PowerManager;
+import android.os.PowerManager.WakeLock;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -24,10 +33,10 @@ import android.widget.AdapterView.OnItemSelectedListener;
 public class MainActivity extends Activity implements SensorEventListener {
     private static final int MENU_SAVE = Menu.FIRST;
 	private static final int MENU_QUIT = MENU_SAVE + 1;
-	/** Called when the activity is first created. */
 	
 	Spinner spinner;
 	Spinner rateSpinner;
+	Spinner wakeLockSpinner;
 	ArrayList<SensorWrapper> sensors = new ArrayList<SensorWrapper>();
 	Sensor currentSensor;
 	
@@ -42,11 +51,16 @@ public class MainActivity extends Activity implements SensorEventListener {
 	Button button;
 	
 	SensorManager sm;
-	static SensorRunner runner = null;
+	PowerManager pm;
+	PowerManager.WakeLock wakeLock;
+	
+	static SensorRecorder recorder = null;
 	
 	Context context;
 	
 	int currentRate = 0;
+	
+	
 	
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -64,25 +78,28 @@ public class MainActivity extends Activity implements SensorEventListener {
 		textViewValue3 = (TextView) findViewById(R.id.TextViewValue3);		
 	
 		sm = (SensorManager) getSystemService(SENSOR_SERVICE);
+		pm = (PowerManager) getSystemService(POWER_SERVICE);
 		
 		setupRateSpinner();
 		setupSensorSpinner();
-		setupButton();
+		setupWakeLockSpinner();
+		button = (Button)findViewById(R.id.ButtonStartStop);
+		
+		if (recorder != null) {
+			changeState(RecorderState.RUNNING);
+		} else
+		{
+			changeState(RecorderState.STOPPED);
+		}
     }
 
 
-	private void setupButton() {
-		button = (Button)findViewById(R.id.ButtonStartStop);
-		if (runner != null)
-		{
-			button.setText("Stop");
-			button.setOnClickListener(stopListener);
-		}
-		else
-		{
-			button.setText("Start");
-			button.setOnClickListener(startListener);
-		}
+	private void setupWakeLockSpinner() {
+		ArrayAdapter<WakeLockType> adapter = new ArrayAdapter<WakeLockType>(this, android.R.layout.simple_spinner_item, WakeLockType.values());
+		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		
+		wakeLockSpinner = (Spinner)findViewById(R.id.SpinnerWakeLock);
+		wakeLockSpinner.setAdapter(adapter);
 	}
 
 
@@ -116,34 +133,20 @@ public class MainActivity extends Activity implements SensorEventListener {
 		public void onItemSelected(AdapterView<?> arg0, View arg1,
 				int position, long arg3) {
 			currentRate = SensorRate.values()[position].getValue();
-			unregisterSensor();		
-			registerSensor();
+			changeState(MonitorState.CHANGE_RATE);
 		}
 
 		@Override
 		public void onNothingSelected(AdapterView<?> arg0) {
-			// TODO Auto-generated method stub
-			
 		}
 	};
 	
 	private final OnItemSelectedListener sensorSpinnerListener = new OnItemSelectedListener() {
 		@Override
-		public void onItemSelected(AdapterView<?> arg0, View arg1, int position,
-				long arg3) {
-			Sensor s = sensors.get(position).getSensor();
-			
-			textViewName.setText(s.getName());
-			textViewPower.setText("" + s.getPower());
-			textViewResolution.setText("" + s.getResolution());
-			textViewMaxRange.setText("" + s.getMaximumRange());
-			
-			if (s == currentSensor)
-				return;
-				
-			unregisterSensor();		
-			currentSensor = s;		
-			registerSensor();
+		public void onItemSelected(AdapterView<?> arg0, View arg1,
+				int position, long arg3) {
+			currentSensor = sensors.get(position).getSensor();
+			changeState(MonitorState.CHANGE_SENSOR);
 		}
 
 		@Override
@@ -154,53 +157,19 @@ public class MainActivity extends Activity implements SensorEventListener {
 	private final View.OnClickListener startListener = new View.OnClickListener() {
 		@Override
 		public void onClick(View v) {
-			runner = new SensorRunner(context, sm, currentSensor, currentRate);
-			startRunner();
-			button.setText("Stop");
-			button.setOnClickListener(stopListener);
+			changeState(RecorderState.START);
 		}
 	};
 	
 	private final View.OnClickListener stopListener = new View.OnClickListener() {
 		@Override
 		public void onClick(View v) {
-			stopRunner();
-			Toast.makeText(context, "Gathered samples:" + runner.getNumberOfSamples(), Toast.LENGTH_SHORT).show();
-			runner = null;
-			button.setText("Start");
-			button.setOnClickListener(startListener);
+			changeState(RecorderState.STOP);
 		}
 	};
 
-	private void registerSensor() {
-		if (currentSensor != null)
-		{
-			sm.registerListener(this, currentSensor, currentRate);
-		}
-	}
-
-	private void startRunner() {
-		if (runner != null && !runner.isRunning())
-			runner.start();
-	}
-
-
-	private void unregisterSensor() {
-		if (currentSensor != null)
-		{
-			sm.unregisterListener(this);
-		}
-	}
-
-	private void stopRunner() {
-		if (runner != null)
-			runner.stop();
-	}
-	
 	@Override
 	public void onAccuracyChanged(Sensor arg0, int arg1) {
-		// TODO Auto-generated method stub
-		
 	}
 
 
@@ -216,10 +185,10 @@ public class MainActivity extends Activity implements SensorEventListener {
 	protected void onPause() {
 		super.onPause();
 		
-		unregisterSensor();
+		changeState(MonitorState.OFF);
 		if (isFinishing())
 		{
-			stopRunner();	
+			changeState(RecorderState.STOP);
 		}
 		
 	}
@@ -228,8 +197,7 @@ public class MainActivity extends Activity implements SensorEventListener {
 	@Override
 	protected void onResume() {
 		super.onResume();
-		registerSensor();
-		startRunner();
+		changeState(MonitorState.ON);
 	}
 
 
@@ -248,7 +216,8 @@ public class MainActivity extends Activity implements SensorEventListener {
 		{
 		case MENU_SAVE:
 			try {
-				MySQLiteHelper.copyDataBase(context, SensorRunner.DBNAME, Environment.getExternalStorageDirectory() + "/" + SensorRunner.DBNAME );
+				MySQLiteHelper.copyDataBase(context, SensorRecorder.DBNAME, 
+						Environment.getExternalStorageDirectory() + "/" + SensorRecorder.DBNAME );
 			} catch (Throwable e) {
 				Log.d("Exception", e.toString());
 				Toast.makeText(context, e.toString(), Toast.LENGTH_LONG).show();
@@ -261,8 +230,85 @@ public class MainActivity extends Activity implements SensorEventListener {
 		return super.onOptionsItemSelected(item);
 	}
 
-
 	
+	
+	private void changeState(MonitorState state) {
+		switch(state){
+		case OFF:
+			sm.unregisterListener(this);			
+			break;
+		case CHANGE_RATE:
+			reregisterSensor();
+			break;
+		case CHANGE_SENSOR:
+			reregisterSensor();
+			changeState(MonitorState.CHANGE_DESCRIPTION);
+			break;
+		case ON:
+			currentSensor =  ((SensorWrapper) spinner.getSelectedItem()).getSensor();
+			currentRate =  ((SensorRate) rateSpinner.getSelectedItem()).getValue();
+			reregisterSensor();
+			changeState(MonitorState.CHANGE_DESCRIPTION);
+			break;
+		case CHANGE_DESCRIPTION:
+			textViewName.setText(currentSensor.getName());
+			textViewPower.setText("" + currentSensor.getPower());
+			textViewResolution.setText("" + currentSensor.getResolution());
+			textViewMaxRange.setText("" + currentSensor.getMaximumRange());			
+			break;
+		}
+	}
+
+
+	private void reregisterSensor() {
+		sm.unregisterListener(this);
+		sm.registerListener(this, currentSensor, currentRate);
+	}
+	
+	
+	private void changeState(RecorderState newState) {
+		switch(newState){
+		case START:
+			recorder = new SensorRecorder(context, sm, currentSensor, currentRate);
+			recorder.start();
+			changeState(RecorderState.RUNNING);
+			acquireLock();
+			break;
+		case RUNNING:
+			button.setText("Stop");
+			button.setOnClickListener(stopListener);
+			break;
+		case STOP:
+			if (recorder != null)
+			{
+				recorder.stop();
+				Toast.makeText(context, "Gathered samples:" + recorder.getNumberOfSamples(), Toast.LENGTH_SHORT).show();
+			}
+			
+			changeState(RecorderState.STOPPED);
+			releaseLock();
+			break;
+		case STOPPED:
+			recorder = null;
+			button.setText("Start");
+			button.setOnClickListener(startListener);		
+			break;
+		}
+
+	}
+
+
+	private void releaseLock() {
+		if (wakeLock.isHeld())
+			wakeLock.release();
+	}
+
+
+	private void acquireLock() {
+		int lockType = ((WakeLockType) wakeLockSpinner.getSelectedItem()).getValue();
+		wakeLock = pm.newWakeLock(lockType, "Sensors app");
+		wakeLock.acquire();
+	}
 	
 
 }

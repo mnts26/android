@@ -13,7 +13,10 @@ import android.provider.OpenableColumns;
 
 public class MySQLiteHelper extends SQLiteOpenHelper {
 
-	private static final String CREATE_MEASURE_QUERY = "CREATE TABLE measure ( " +
+	static final String MEASURE_TABLE = "measurement";
+	static final String RUN_TABLE = "run";
+	
+	private static final String CREATE_MEASURE_QUERY = "CREATE TABLE " + MEASURE_TABLE + " ( " +
 		    "id INTEGER PRIMARY KEY AUTOINCREMENT, " +
 		    "runId INTEGER," +
 		    "timestamp INTEGER," +
@@ -22,10 +25,12 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
 		    "value3 REAL DEFAULT (0)" +
 		    ")";
 
-	private static final String CREATE_RUN_DEFINITION_QUERY = "CREATE TABLE runDefinition (" +
+	private static final String CREATE_RUN_DEFINITION_QUERY = "CREATE TABLE " + RUN_TABLE + " (" +
 		    "runId INTEGER PRIMARY KEY AUTOINCREMENT," +
 		    "sensor TEXT," +
-		    "rate INTEGER"+
+		    "rate INTEGER,"+
+		    "start_date DATETIME DEFAULT CURRENT_TIMESTAMP," +
+		    "end_date DATETIME" + 
 		")";
 
 	
@@ -42,6 +47,8 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
 
 	@Override
 	public void onUpgrade(SQLiteDatabase db, int arg1, int arg2) {
+		db.execSQL("drop table if exists " + RUN_TABLE);
+		db.execSQL("drop table if exists " + MEASURE_TABLE);
 		onCreate(db);
 	}
 

@@ -18,6 +18,7 @@ public final class R {
         public static final int RelativeLayout01=0x7f050000;
         public static final int Spinner01=0x7f050001;
         public static final int Spinner02=0x7f050007;
+        public static final int SpinnerWakeLock=0x7f05000c;
         public static final int TextViewMaxRange=0x7f050005;
         public static final int TextViewName=0x7f050002;
         public static final int TextViewPower=0x7f050003;

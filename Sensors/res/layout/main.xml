@@ -12,7 +12,7 @@
 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_below="@id/TextViewPower" android:text="0" android:id="@+id/TextViewResolution"></TextView>
 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Max range" android:layout_below="@id/TextViewResolution"></TextView>
 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/TextViewMaxRange" android:text="0" android:layout_below="@id/TextViewResolution" android:layout_alignParentRight="true"></TextView><View android:id="@+id/View01" android:layout_width="fill_parent" android:layout_height="2px" android:layout_below="@+id/TextViewMaxRange" android:background="#F04040"></View>
-<Spinner android:id="@+id/Spinner02" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_below="@id/View01"></Spinner><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:id="@+id/TextViewValue1" android:text="0"></TextView>
+<Spinner android:id="@+id/Spinner02" android:layout_height="wrap_content" android:layout_below="@id/View01" android:layout_width="150dip"></Spinner><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:id="@+id/TextViewValue1" android:text="0"></TextView>
 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:id="@+id/TextViewValue2" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"></TextView>
 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:text="0" android:id="@+id/TextViewValue3"></TextView>
 
@@ -20,4 +20,5 @@
 
 
 <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ButtonStartStop" android:text="Start" android:layout_below="@+id/Spinner02"></Button>
+<Spinner android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/SpinnerWakeLock" android:layout_below="@id/View01" android:layout_toRightOf="@+id/Spinner02" android:layout_alignParentRight="true"></Spinner>
 </RelativeLayout>
