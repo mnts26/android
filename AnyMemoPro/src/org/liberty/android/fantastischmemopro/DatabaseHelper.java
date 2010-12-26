@@ -650,41 +650,19 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 	}
 	
 	public void addOrReplaceItem(final Item item){
-//		Debug.startMethodTracing("addOrReplaceItem(Item item)");
-	//	if (myDatabase.inTransaction()) {
-			doAddOrReplaceItem(item);
-//		} else {
-//			new Thread() {
-//				public void run() {
-//					beginTransaction();
-//					doAddOrReplaceItem(item);
-//					endSuccessfullTransaction();
-//				}
-//			}.start();
-//		}
-
-	//	Debug.stopMethodTracing();
-//		boolean innerTransaction = false;
-//		if (!myDatabase.inTransaction()) {
-//			innerTransaction = true;
-//			myDatabase.beginTransaction();
-//		}
-//		
-//		this.myDatabase.execSQL("REPLACE INTO dict_tbl(_id, question, answer, note, category) VALUES(?, ?, ?, ?, ?)", new String[]{"" + item.getId(), item.getQuestion(), item.getAnswer(), item.getNote(), item.getCategory()});
-//		this.myDatabase.execSQL("REPLACE INTO learn_tbl(date_learn, interval, grade, easiness, acq_reps, ret_reps, lapses, acq_reps_since_lapse, ret_reps_since_lapse, _id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", item.getLearningData());
-//		
-//		if (innerTransaction) {
-//			endSuccessfullTransaction();
-//		}
-
-	}
-
-	private void doAddOrReplaceItem(Item item) {
+		//	Debug.startMethodTracing("addOrReplaceItem(Item item)");
+		// each of this method normally causes flash writes which on my milestone
+		// take 1s each! The tracing doesn't show that because it is delay on the
+		// system side
+		// however when those are invoked in transaction the flash write is done
+		// after commiting/ending transaction
 		this.myDatabase.execSQL("REPLACE INTO dict_tbl(_id, question, answer, note, category) VALUES(?, ?, ?, ?, ?)", new String[]{"" + item.getId(), item.getQuestion(), item.getAnswer(), item.getNote(), item.getCategory()});
 		this.myDatabase.execSQL("REPLACE INTO learn_tbl(date_learn, interval, grade, easiness, acq_reps, ret_reps, lapses, acq_reps_since_lapse, ret_reps_since_lapse, _id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", item.getLearningData());
+
+		//	Debug.stopMethodTracing();
 	}
 
-	
+	// expose those 3 method for the learnQueueManager to govern transactions
 	public void beginTransaction() {
 		myDatabase.beginTransaction();
 	}

@@ -49,6 +49,8 @@ public final class Item implements Cloneable, Serializable{
 	private String note;
     private String category;
     public final static String TAG = "org.liberty.android.fantastischmemopro.Item";
+    // make the formatter final static - created once instead of each time
+    // which caused some delay.
     private final static SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
 	
 	public Item(){
@@ -266,22 +268,7 @@ public final class Item implements Cloneable, Serializable{
 		return interval;
 	}
 	
-	private int diffDate(Date now, String date2){
-        // The days betwween to date of date1 and date2 in format below.
-		final double MILLSECS_PER_DAY = 86400000.0;
-		Date d2;
-		int difference = 0;
-		try{
-			d2 = formatter.parse(date2);
-			difference = (int)Math.round((now.getTime() - d2.getTime()) / MILLSECS_PER_DAY);
-		}
-		catch(Exception e){
-			Log.e("diffDate parse error!", e.toString());
-		}
-		return difference;
-	}
-
-
+	// diffDate replaced by this one
 	private int getIntervalFrom(String date2){
         // The days betwween to date of date1 and date2 in format below.
 		final double MILLSECS_PER_DAY = 86400000.0;

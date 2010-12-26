@@ -135,6 +135,7 @@ public class SettingManager{
         this(context);
         dbHelper = new DatabaseHelper(context, dbPath, dbName);
         loadDBSettings();
+        // dbHelper only used once during load so close it
         dbHelper.close();
     }
 
@@ -278,13 +279,7 @@ public class SettingManager{
 
 
 	public void close(){
-//        if(dbHelper != null){
-//            try{
-//                dbHelper.close();
-//            }
-//            catch(Exception e){
-//            }
-//        }
+		// nothing to do since db already closed
     }
 
     public String getDbPath(){

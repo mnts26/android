@@ -161,6 +161,7 @@ class LearnQueueManager implements QueueManager{
         }
     }
 
+    // this method is extracted from updateAndNext because it is invoked not by ui thread
     public Item getFirstItemFromQueue() {
     	if(learnQueue == null || learnQueue.size() == 0){
             return null;
@@ -168,10 +169,7 @@ class LearnQueueManager implements QueueManager{
     	return learnQueue.get(0).clone();
     }
     
-    public void beginTransaction() {
-    	dbHelper.beginTransaction();
-    }
-    
+
     /*
      * update current item and remove it in the queue
      * if the current item is not learned, this method will put it at the 
@@ -183,10 +181,9 @@ class LearnQueueManager implements QueueManager{
         if(learnQueue == null || learnQueue.size() == 0){
             return null;
         }
+        
+        // assert item never null
 
-        if (item == null) {
-        	return null;
-        }
         
         /* When fail to remember a new card */
         if(learnQueue.get(0).isNew() && item.isScheduled()){
@@ -230,13 +227,16 @@ class LearnQueueManager implements QueueManager{
         
         if (!dbHelper.inTransaction()) {
         	dbHelper.beginTransaction();
+        	// end transaction (which causes flesh writes and takes ~1s)
+        	// after ui shows user the next question. User reads question
+        	// and in the meantime ui thread does the commit - it looks like superfast to the user :)
         	handler.postDelayed(new Runnable() {
 				@Override
 				public void run() {
 					if (dbHelper.inTransaction())
 						dbHelper.endSuccessfullTransaction();
 				}
-			},100);
+			},100); // 100ms so the handler gets invoked after ui updates itself
         }
         
         dbHelper.addOrReplaceItem(item);
