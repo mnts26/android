@@ -9,7 +9,8 @@
 
     <application 
         android:icon="@drawable/icon" 
-        android:label="@string/app_name" >
+        android:label="@string/app_name" 
+        android:debuggable="true">
         <activity 
             android:name=".AnyMemo"
             android:configChanges="orientation|keyboardHidden"
@@ -36,9 +37,9 @@
         <activity 
             android:name=".DetailScreen"
             android:configChanges="orientation|keyboardHidden" />
-        <activity 
+      <!--   <activity 
             android:name=".Downloader" 
-            android:configChanges="orientation|keyboardHidden" />
+            android:configChanges="orientation|keyboardHidden" /> -->
         <activity 
             android:name=".cardscreen.MemoScreen"
             android:configChanges="orientation|keyboardHidden" />

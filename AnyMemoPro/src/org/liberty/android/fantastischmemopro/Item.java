@@ -21,6 +21,7 @@ package org.liberty.android.fantastischmemopro;
 
 import java.text.SimpleDateFormat;
 import java.text.ParseException;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -48,6 +49,7 @@ public final class Item implements Cloneable, Serializable{
 	private String note;
     private String category;
     public final static String TAG = "org.liberty.android.fantastischmemopro.Item";
+    private final static SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
 	
 	public Item(){
 		this._id = 0;
@@ -92,7 +94,6 @@ public final class Item implements Cloneable, Serializable{
 
     public long getDatelearnUnix() throws ParseException{
         // Get the datelearn in unix time * 1000
-		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
 		Date date = formatter.parse(this.date_learn);
         return date.getTime() / 1000;
     }
@@ -265,16 +266,14 @@ public final class Item implements Cloneable, Serializable{
 		return interval;
 	}
 	
-	private int diffDate(String date1, String date2){
+	private int diffDate(Date now, String date2){
         // The days betwween to date of date1 and date2 in format below.
 		final double MILLSECS_PER_DAY = 86400000.0;
-		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
-		Date d1, d2;
+		Date d2;
 		int difference = 0;
 		try{
-			d1 = formatter.parse(date1);
 			d2 = formatter.parse(date2);
-			difference = (int)Math.round((d1.getTime() - d2.getTime()) / MILLSECS_PER_DAY);
+			difference = (int)Math.round((now.getTime() - d2.getTime()) / MILLSECS_PER_DAY);
 		}
 		catch(Exception e){
 			Log.e("diffDate parse error!", e.toString());
@@ -283,11 +282,25 @@ public final class Item implements Cloneable, Serializable{
 	}
 
 
+	private int getIntervalFrom(String date2){
+        // The days betwween to date of date1 and date2 in format below.
+		final double MILLSECS_PER_DAY = 86400000.0;
+		int difference = 0;
+		Calendar now = Calendar.getInstance();
+		now.set(Calendar.HOUR_OF_DAY, 0);
+		now.set(Calendar.MINUTE, 0);
+		try{
+			Date d2 = formatter.parse(date2);
+			difference = (int)Math.round((now.getTimeInMillis() - d2.getTime()) / MILLSECS_PER_DAY);
+		}
+		catch(Exception e){
+			Log.e("diffDate parse error!", e.toString());
+		}
+		return difference;
+	}
+	
 	public boolean isScheduled(){
-		Date currentDate = new Date();
-		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
-		String now = formatter.format(currentDate);
-		int actualInterval = diffDate(now, this.date_learn);
+		int actualInterval = getIntervalFrom(this.date_learn);
 		int scheduleInterval = this.interval;
 		//actualInterval = actualInterval == 0 ? actualInterval + 1 : actualInterval;
 		if(scheduleInterval <= actualInterval && this.acq_reps > 0){
@@ -300,13 +313,7 @@ public final class Item implements Cloneable, Serializable{
 	}
 
 	public int processAnswer(int newGrade, boolean dryRun){
-        // dryRun will leave the original one intact
-        // and return the interval
-        // if dryRun is false, the return value only show success or not
-		Date currentDate = new Date();
-		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
-		String now = formatter.format(currentDate);
-		int actualInterval = diffDate(now, this.date_learn);
+        int actualInterval = getIntervalFrom(this.date_learn);
 		int scheduleInterval = this.interval;
 		int newInterval = 0;
         Item cloneItem = null;
@@ -424,7 +431,7 @@ public final class Item implements Cloneable, Serializable{
 		    int noise = calculateIntervalNoise(newInterval);
             this.interval = newInterval + noise;
             this.grade = newGrade;
-            this.date_learn = now;
+            this.date_learn = formatter.format(new Date());
             // 1 means success ,0 means fail
             return returnValue ? 1 : 0;
         }

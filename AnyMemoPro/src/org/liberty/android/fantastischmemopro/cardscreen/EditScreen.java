@@ -444,7 +444,7 @@ public class EditScreen extends AMActivity{
         LinearLayout controlButtonsView = (LinearLayout)controlButtons.getView();
         /* This li is make the background of buttons the same as answer */
         LinearLayout li = new LinearLayout(this);
-        li.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.FILL_PARENT));
+        li.setLayoutParams(new LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.FILL_PARENT));
         List<Integer> colors = settingManager.getColors();
         if(colors != null){
             li.setBackgroundColor(settingManager.getColors().get(3));

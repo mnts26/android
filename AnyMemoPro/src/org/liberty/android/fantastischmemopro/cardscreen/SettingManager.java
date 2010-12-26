@@ -135,6 +135,7 @@ public class SettingManager{
         this(context);
         dbHelper = new DatabaseHelper(context, dbPath, dbName);
         loadDBSettings();
+        dbHelper.close();
     }
 
     public boolean getEnableThirdPartyArabic(){
@@ -275,14 +276,15 @@ public class SettingManager{
         }
     }
 
-    public void close(){
-        if(dbHelper != null){
-            try{
-                dbHelper.close();
-            }
-            catch(Exception e){
-            }
-        }
+
+	public void close(){
+//        if(dbHelper != null){
+//            try{
+//                dbHelper.close();
+//            }
+//            catch(Exception e){
+//            }
+//        }
     }
 
     public String getDbPath(){

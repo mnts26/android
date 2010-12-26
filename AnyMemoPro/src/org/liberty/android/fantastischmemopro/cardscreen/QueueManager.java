@@ -28,6 +28,8 @@ import org.liberty.android.fantastischmemopro.*;
 interface QueueManager{
     /* before everything */
     public boolean initQueue();
+    /* get the first item from queue */
+    Item getFirstItemFromQueue();
     /* give the next item according to current one */
     public Item updateAndNext(Item item);
     /* Update the item with the same id */

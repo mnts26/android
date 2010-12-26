@@ -97,6 +97,7 @@ class LearnQueueManager implements QueueManager{
     private List<Item> learnQueue = null;
     private int revCardNo;
     private int newCardNo;
+    private Handler handler;
 
 
     public static class Builder{
@@ -106,8 +107,9 @@ class LearnQueueManager implements QueueManager{
         private String activeFilter = "";
         private int queueSize = 10;
         private boolean shuffleCards = false;
+        
 
-        public Builder(Context context, String dbpath, String dbname){
+		public Builder(Context context, String dbpath, String dbname){
             mContext = context;
             dbPath = dbpath;
             dbName = dbname;
@@ -128,6 +130,7 @@ class LearnQueueManager implements QueueManager{
             return this;
         }
 
+
         public LearnQueueManager build(){
             return new LearnQueueManager(this);
         }
@@ -143,6 +146,7 @@ class LearnQueueManager implements QueueManager{
         dbHelper = new DatabaseHelper(mContext, dbPath, dbName);
         revCardNo = dbHelper.getScheduledCount();
         newCardNo = dbHelper.getNewCount();
+        handler = new Handler();
     }
 
 
@@ -157,6 +161,17 @@ class LearnQueueManager implements QueueManager{
         }
     }
 
+    public Item getFirstItemFromQueue() {
+    	if(learnQueue == null || learnQueue.size() == 0){
+            return null;
+        }
+    	return learnQueue.get(0).clone();
+    }
+    
+    public void beginTransaction() {
+    	dbHelper.beginTransaction();
+    }
+    
     /*
      * update current item and remove it in the queue
      * if the current item is not learned, this method will put it at the 
@@ -168,10 +183,11 @@ class LearnQueueManager implements QueueManager{
         if(learnQueue == null || learnQueue.size() == 0){
             return null;
         }
-        if(item == null){
-            return learnQueue.get(0).clone();
-        }
 
+        if (item == null) {
+        	return null;
+        }
+        
         /* When fail to remember a new card */
         if(learnQueue.get(0).isNew() && item.isScheduled()){
             newCardNo -= 1;
@@ -211,6 +227,18 @@ class LearnQueueManager implements QueueManager{
                 learnQueue.add(orngItem);
             }
         }
+        
+        if (!dbHelper.inTransaction()) {
+        	dbHelper.beginTransaction();
+        	handler.postDelayed(new Runnable() {
+				@Override
+				public void run() {
+					if (dbHelper.inTransaction())
+						dbHelper.endSuccessfullTransaction();
+				}
+			},100);
+        }
+        
         dbHelper.addOrReplaceItem(item);
         /* Fill up the queue to its queue size */
         int maxNewId = getMaxQueuedItemId(true);
@@ -296,7 +324,10 @@ class LearnQueueManager implements QueueManager{
     }
     public void close(){
         if(dbHelper != null){
+        	//if (dbHelper.inTransaction()) 
+        	//	dbHelper.endSuccessfullTransaction();
             dbHelper.close();
+            
         }
         /* Release memeory */
         if(learnQueue != null){

@@ -32,6 +32,7 @@ import java.util.ListIterator;
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.Set;
+import java.util.TreeMap;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 import java.util.Comparator;
@@ -43,6 +44,7 @@ import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.os.Debug;
 import android.util.Log;
 
 import org.json.JSONArray;
@@ -63,6 +65,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		
 	public DatabaseHelper(Context context, String path, String name){
 		super(context, name, null, 1);
+		
 		dbPath = path;
 		dbName = name;
         File dbfile = new File(dbPath + "/" + dbName);
@@ -252,6 +255,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 	public synchronized void close(){
 		if(myDatabase != null){
+
 			myDatabase.close();
 		}
 		super.close();
@@ -645,12 +649,54 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		return res;
 	}
 	
-	public void addOrReplaceItem(Item item){
-		this.myDatabase.execSQL("REPLACE INTO dict_tbl(_id, question, answer, note, category) VALUES(?, ?, ?, ?, ?)", new String[]{"" + item.getId(), item.getQuestion(), item.getAnswer(), item.getNote(), item.getCategory()});
-		this.myDatabase.execSQL("REPLACE INTO learn_tbl(date_learn, interval, grade, easiness, acq_reps, ret_reps, lapses, acq_reps_since_lapse, ret_reps_since_lapse, _id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", item.getLearningData());
-		
+	public void addOrReplaceItem(final Item item){
+//		Debug.startMethodTracing("addOrReplaceItem(Item item)");
+	//	if (myDatabase.inTransaction()) {
+			doAddOrReplaceItem(item);
+//		} else {
+//			new Thread() {
+//				public void run() {
+//					beginTransaction();
+//					doAddOrReplaceItem(item);
+//					endSuccessfullTransaction();
+//				}
+//			}.start();
+//		}
+
+	//	Debug.stopMethodTracing();
+//		boolean innerTransaction = false;
+//		if (!myDatabase.inTransaction()) {
+//			innerTransaction = true;
+//			myDatabase.beginTransaction();
+//		}
+//		
+//		this.myDatabase.execSQL("REPLACE INTO dict_tbl(_id, question, answer, note, category) VALUES(?, ?, ?, ?, ?)", new String[]{"" + item.getId(), item.getQuestion(), item.getAnswer(), item.getNote(), item.getCategory()});
+//		this.myDatabase.execSQL("REPLACE INTO learn_tbl(date_learn, interval, grade, easiness, acq_reps, ret_reps, lapses, acq_reps_since_lapse, ret_reps_since_lapse, _id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", item.getLearningData());
+//		
+//		if (innerTransaction) {
+//			endSuccessfullTransaction();
+//		}
+
 	}
 
+	private void doAddOrReplaceItem(Item item) {
+		this.myDatabase.execSQL("REPLACE INTO dict_tbl(_id, question, answer, note, category) VALUES(?, ?, ?, ?, ?)", new String[]{"" + item.getId(), item.getQuestion(), item.getAnswer(), item.getNote(), item.getCategory()});
+		this.myDatabase.execSQL("REPLACE INTO learn_tbl(date_learn, interval, grade, easiness, acq_reps, ret_reps, lapses, acq_reps_since_lapse, ret_reps_since_lapse, _id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", item.getLearningData());
+	}
+
+	
+	public void beginTransaction() {
+		myDatabase.beginTransaction();
+	}
+	
+	public boolean inTransaction() {
+		return myDatabase.inTransaction();
+	}
+	
+	public void endSuccessfullTransaction() {
+		myDatabase.setTransactionSuccessful();
+		myDatabase.endTransaction();
+	}
 
     public void inverseQA(){
         List<Item> itemList = getListItems(0, -1, 0, null);

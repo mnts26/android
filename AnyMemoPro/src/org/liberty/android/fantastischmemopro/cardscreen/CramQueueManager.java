@@ -160,7 +160,21 @@ class CramQueueManager implements QueueManager{
             return true;
         }
     }
-
+    public Item getFirstItemFromQueue() {
+    	if(learnQueue == null || learnQueue.size() == 0){
+            return null;
+        }
+    	
+        if(shuffleCards && learnQueue.size() >= 2){
+            Item first = learnQueue.get(0);
+            learnQueue.remove(0);
+            Collections.shuffle(learnQueue);
+            learnQueue.add(0, first);
+        }
+        
+        return learnQueue.get(0);
+    }
+    
     public Item updateAndNext(Item item){
         if(learnQueue == null || learnQueue.size() == 0){
             return null;

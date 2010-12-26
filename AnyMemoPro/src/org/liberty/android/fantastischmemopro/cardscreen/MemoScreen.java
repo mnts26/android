@@ -81,6 +81,7 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.AdapterView;
 import android.widget.Toast;
 import android.util.Log;
+import android.os.Debug;
 import android.os.SystemClock;
 import android.os.Environment;
 import android.graphics.Typeface;
@@ -166,7 +167,7 @@ public class MemoScreen extends AMActivity{
         new Thread(){
             public void run(){
                 queueManager.initQueue();
-                currentItem = queueManager.updateAndNext(null);
+                currentItem = queueManager.getFirstItemFromQueue();
                 mHandler.post(new Runnable(){
                     public void run(){
                         if(currentItem == null){
@@ -590,6 +591,7 @@ public class MemoScreen extends AMActivity{
     private View.OnClickListener getGradeButtonListener(final int grade){
         return new View.OnClickListener(){
             public void onClick(View v){
+            	//Debug.startMethodTracing("my3.trace");
                 prevItem = currentItem.clone();
                 currentItem.processAnswer(grade, false);
                 currentItem = queueManager.updateAndNext(currentItem);
@@ -600,7 +602,9 @@ public class MemoScreen extends AMActivity{
                     updateFlashcardView(false);
                     hideButtons();
                 }
+                //Debug.stopMethodTracing();
             }
+            
         };
     }
 
@@ -630,7 +634,7 @@ public class MemoScreen extends AMActivity{
         LinearLayout controlButtonsView = (LinearLayout)controlButtons.getView();
         /* This li is make the background of buttons the same as answer */
         LinearLayout li = new LinearLayout(this);
-        li.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.FILL_PARENT));
+        li.setLayoutParams(new LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.FILL_PARENT));
         List<Integer> colors = settingManager.getColors();
         if(colors != null){
             li.setBackgroundColor(settingManager.getColors().get(3));

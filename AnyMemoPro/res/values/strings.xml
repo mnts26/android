@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
-    <string name="app_name">AnyMemo Pro</string>
-    <string name="app_full_name">AnyMemo Pro</string>
+    <string name="app_name">AnyMemo Pro Buzz</string>
+    <string name="app_full_name">AnyMemo Pro Buzz</string>
     <string name="app_version">7.0.0</string>
     <string name="up_one_level">..</string>
     <string name="current_dir">.</string>
