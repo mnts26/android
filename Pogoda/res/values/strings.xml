@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="hello">Hello World</string>
+    <string name="app_name">ICM pogoda</string>
+<string name="chooseArea">Wybierz województwo</string>
+<string name="chooseLetter">Wybierz literę miasta</string>
+    <string name="wait">Proszę chwilkę poczekać</string>
+</resources>
