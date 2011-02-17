@@ -36,6 +36,7 @@ import android.util.Log;
 public final class Item implements Cloneable, Serializable{
 	private int _id;
 	private String date_learn;
+	private Date date_learn_as_date;
 	private int interval;
 	private int grade;
 	private double easiness;
@@ -52,10 +53,11 @@ public final class Item implements Cloneable, Serializable{
     // make the formatter final static - created once instead of each time
     // which caused some delay.
     private final static SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+    private final static CachedCalendar now = new CachedCalendar();
 	
 	public Item(){
 		this._id = 0;
-		this.date_learn = "2010-01-01";
+		setDateLearn("2010-01-01");
 		this.interval = 0;
 		this.grade = 0;
 		this.easiness = 2.5;
@@ -96,7 +98,7 @@ public final class Item implements Cloneable, Serializable{
 
     public long getDatelearnUnix() throws ParseException{
         // Get the datelearn in unix time * 1000
-		Date date = formatter.parse(this.date_learn);
+		Date date = formatter.parse(this.getDateLearn());
         return date.getTime() / 1000;
     }
 
@@ -142,7 +144,8 @@ public final class Item implements Cloneable, Serializable{
     public Item clone(){
         Item itemClone = new Item();
         itemClone._id = this._id;
-        itemClone.date_learn = this.date_learn;
+        itemClone.date_learn = this.getDateLearn();
+        itemClone.date_learn_as_date = this.getDateLearnAsDate();
         itemClone.interval = this.interval;
         itemClone.grade = this.grade;
         itemClone.easiness = this.easiness;
@@ -162,7 +165,7 @@ public final class Item implements Cloneable, Serializable{
 	
 	public String[] getLearningData(){
 		// the string array is in the sequence that is required in the DatabaseHelper.updateItem
-		return new String[]{date_learn, new Integer(interval).toString(), new Integer(grade).toString(), new Double(easiness).toString(), new Integer(acq_reps).toString(), new Integer(ret_reps).toString(), new Integer(lapses).toString(), new Integer(acq_reps_since_lapse).toString(), new Integer(ret_reps_since_lapse).toString(), new Integer(_id).toString()};
+		return new String[]{getDateLearn(), new Integer(interval).toString(), new Integer(grade).toString(), new Double(easiness).toString(), new Integer(acq_reps).toString(), new Integer(ret_reps).toString(), new Integer(lapses).toString(), new Integer(acq_reps_since_lapse).toString(), new Integer(ret_reps_since_lapse).toString(), new Integer(_id).toString()};
 	}
 	
 	public void setData(HashMap<String, String> hm){
@@ -174,7 +177,7 @@ public final class Item implements Cloneable, Serializable{
 				this._id = Integer.parseInt(hm.get("_id")); 
 			}
 			if(((String)me.getKey()) == "date_learn"){
-				this.date_learn = hm.get("date_learn");
+				setDateLearn(hm.get("date_learn"));
 			}
 			if(((String)me.getKey()) == "interval"){
 				this.interval = Integer.parseInt(hm.get("interval")); 
@@ -269,25 +272,14 @@ public final class Item implements Cloneable, Serializable{
 	}
 	
 	// diffDate replaced by this one
-	private int getIntervalFrom(String date2){
-        // The days betwween to date of date1 and date2 in format below.
+	private int getActualInterval(){
 		final double MILLSECS_PER_DAY = 86400000.0;
-		int difference = 0;
-		Calendar now = Calendar.getInstance();
-		now.set(Calendar.HOUR_OF_DAY, 0);
-		now.set(Calendar.MINUTE, 0);
-		try{
-			Date d2 = formatter.parse(date2);
-			difference = (int)Math.round((now.getTimeInMillis() - d2.getTime()) / MILLSECS_PER_DAY);
-		}
-		catch(Exception e){
-			Log.e("diffDate parse error!", e.toString());
-		}
-		return difference;
+		
+		return (int)Math.round((now.getTimeInMillis() - getDateLearnAsDate().getTime()) / MILLSECS_PER_DAY);
 	}
 	
 	public boolean isScheduled(){
-		int actualInterval = getIntervalFrom(this.date_learn);
+		int actualInterval = getActualInterval();
 		int scheduleInterval = this.interval;
 		//actualInterval = actualInterval == 0 ? actualInterval + 1 : actualInterval;
 		if(scheduleInterval <= actualInterval && this.acq_reps > 0){
@@ -300,7 +292,7 @@ public final class Item implements Cloneable, Serializable{
 	}
 
 	public int processAnswer(int newGrade, boolean dryRun){
-        int actualInterval = getIntervalFrom(this.date_learn);
+        int actualInterval = getActualInterval();
 		int scheduleInterval = this.interval;
 		int newInterval = 0;
         Item cloneItem = null;
@@ -399,7 +391,8 @@ public final class Item implements Cloneable, Serializable{
             if(cloneItem != null){
                 this.interval = cloneItem.interval;
                 this._id = cloneItem._id;
-                this.date_learn = cloneItem.date_learn;
+                this.date_learn = cloneItem.getDateLearn();
+                this.date_learn_as_date = cloneItem.getDateLearnAsDate();
                 this.interval = cloneItem.interval;
                 this.grade = cloneItem.grade;
                 this.easiness = cloneItem.easiness;
@@ -438,6 +431,58 @@ public final class Item implements Cloneable, Serializable{
             return false;
         }
     }
+	private String getDateLearn() {
+		return date_learn;
+	}
+	
+	private void setDateLearn(String date_learn) {
+		this.date_learn = date_learn;
+		this.date_learn_as_date = null; // invalidate
+	}
+	
+	private Date getDateLearnAsDate() {
+		if (date_learn_as_date == null) {
+			try{
+				date_learn_as_date = formatter.parse(getDateLearn());
+			}
+			catch(Exception e){
+				Log.e("diffDate parse error!", e.toString());
+				date_learn_as_date = new Date();
+			}
+		}
 
+		return date_learn_as_date;
+	}
+
+	private static class CachedCalendar {
+		private long validTill;
+		private long nowInMiliseconds;
+		
+		public CachedCalendar() {
+			calculate();
+		}
+
+		public long getTimeInMillis() {
+			if (System.currentTimeMillis() > validTill)
+				calculate();
+			
+			return nowInMiliseconds;
+		}
+		
+		private void calculate() {
+			Calendar now = Calendar.getInstance();
+			now.set(Calendar.HOUR_OF_DAY, 23);
+			now.set(Calendar.MINUTE, 59);
+			now.set(Calendar.SECOND, 59);
+			now.set(Calendar.MILLISECOND,999);
+			validTill = now.getTimeInMillis();
+			
+			now.set(Calendar.HOUR_OF_DAY, 0);
+			now.set(Calendar.MINUTE, 0);
+			now.set(Calendar.SECOND, 0);
+			nowInMiliseconds = now.getTimeInMillis();
+		}
+		
+	}
 	
 }

@@ -13,8 +13,8 @@
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
             </intent-filter>
-        
-        </activity>> 
+        </activity>
+        <service android:name=".ServiceWorker"/>
     </application>
     <uses-sdk android:minSdkVersion="7"/>
 </manifest>

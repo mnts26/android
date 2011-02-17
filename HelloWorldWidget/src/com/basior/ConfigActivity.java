@@ -6,6 +6,7 @@ import android.app.Activity;
 import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 import android.view.View;
@@ -16,7 +17,7 @@ import android.widget.RemoteViews.RemoteView;
 
 public class ConfigActivity extends Activity {//PreferenceActivity {
 	
-	int widgetId;
+	int widgetId = AppWidgetManager.INVALID_APPWIDGET_ID;
 	
 	/**
 	 * @see android.app.Activity#onCreate(Bundle)
@@ -57,14 +58,12 @@ public class ConfigActivity extends Activity {//PreferenceActivity {
 	}
 
 	protected void prepareRemoteView(int layout) {
-		WidgetProvider.updateWidget(this, widgetId); 
 		
-		Toast.makeText(this, "Created id:" + widgetId, Toast.LENGTH_SHORT).show();
+		new WidgetUpdater().updateWidget(getApplicationContext(), widgetId);
 		
 		Intent result = new Intent();
 		result.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, widgetId);
 		setResult(RESULT_OK, result);
 		finish();
-			
 	}
 }

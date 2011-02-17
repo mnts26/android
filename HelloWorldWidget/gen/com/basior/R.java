@@ -11,16 +11,19 @@ public final class R {
     public static final class attr {
     }
     public static final class drawable {
-        public static final int icon=0x7f020000;
+        public static final int beta152=0x7f020000;
+        public static final int catsmile=0x7f020001;
+        public static final int icon=0x7f020002;
     }
     public static final class id {
         public static final int ImageView01=0x7f060003;
         public static final int LinearLayout1=0x7f060005;
         public static final int TextView01=0x7f060004;
-        public static final int button1=0x7f060007;
+        public static final int button1=0x7f060008;
         public static final int button_style_1=0x7f060000;
         public static final int button_style_2=0x7f060001;
-        public static final int textViewStyle1=0x7f060006;
+        public static final int imageWidget=0x7f060006;
+        public static final int textWidget=0x7f060007;
         public static final int widget_root=0x7f060002;
     }
     public static final class layout {

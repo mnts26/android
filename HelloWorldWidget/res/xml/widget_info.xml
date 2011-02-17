@@ -5,6 +5,6 @@
   android:minHeight="72dp"
   android:updatePeriodMillis="86400000"
   android:initialLayout="@layout/widget_initial_layout"
-  android:configure="com.basior.ConfigActivity"
+  
   >
 </appwidget-provider>

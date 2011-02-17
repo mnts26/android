@@ -81,6 +81,7 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.AdapterView;
 import android.widget.Toast;
 import android.util.Log;
+import android.os.AsyncTask;
 import android.os.Debug;
 import android.os.SystemClock;
 import android.os.Environment;
@@ -591,10 +592,13 @@ public class MemoScreen extends AMActivity{
     private View.OnClickListener getGradeButtonListener(final int grade){
         return new View.OnClickListener(){
             public void onClick(View v){
-            	//Debug.startMethodTracing("my3.trace");
+            	//Debug.startMethodTracing("my.after.asynctask.opt.trace3");
                 prevItem = currentItem.clone();
                 currentItem.processAnswer(grade, false);
-                currentItem = queueManager.updateAndNext(currentItem);
+                Item nextItem = queueManager.updateAndNext(currentItem);
+                updateInBackground(currentItem);
+                currentItem = nextItem;
+                
                 if(currentItem == null){
                     showNoItemDialog();
                 }
@@ -604,10 +608,58 @@ public class MemoScreen extends AMActivity{
                 }
                 //Debug.stopMethodTracing();
             }
+
+            private void updateInBackground(Item item) {
+            	new AsyncTask<Item, Void, Void>() {
+
+            		@Override
+            		protected void onPostExecute(Void result) {
+            			super.onPostExecute(result);
+            			// enable buttons ?
+            			enableButtons();
+            		}
+
+            		@Override
+            		protected void onPreExecute() {
+            			super.onPreExecute();
+            			// disable buttons so that user cannot press grade button until background job is finished?
+            			disableButtons();
+            		}
+
+            		@Override
+            		protected Void doInBackground(Item... items) {
+            			long t0 = System.currentTimeMillis();
+            			queueManager.updateInBackground(items[0]);
+            			long duration = System.currentTimeMillis() - t0;
+            			return null;
+            		}
+
+            	}.execute(item);
+
+            }
+
+
             
         };
     }
 
+    
+    private void enableButtons() {
+    	   Map<String, Button> hm = controlButtons.getButtons();
+           for(int i = 0; i < 6; i++){
+               Button b = hm.get(Integer.valueOf(i).toString());
+               b.setVisibility(Button.VISIBLE);
+           }
+    }
+    
+    private void disableButtons() {
+        Map<String, Button> hm = controlButtons.getButtons();
+        for(int i = 0; i < 6; i++){
+            Button b = hm.get(Integer.valueOf(i).toString());
+            b.setVisibility(Button.INVISIBLE);
+        }
+    }
+    
     private View.OnLongClickListener getGradeButtonLongClickListener(final int grade){
         return new View.OnLongClickListener(){
             public boolean onLongClick(View v){

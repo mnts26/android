@@ -79,6 +79,7 @@ import android.widget.ArrayAdapter;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.AdapterView;
 import android.util.Log;
+import android.os.AsyncTask;
 import android.os.SystemClock;
 import android.os.Environment;
 import android.graphics.Typeface;
@@ -98,7 +99,8 @@ class LearnQueueManager implements QueueManager{
     private int revCardNo;
     private int newCardNo;
     private Handler handler;
-
+    private long timeEarned = 0;
+    private int itemClics = 0;
 
     public static class Builder{
         private Context mContext;
@@ -225,21 +227,33 @@ class LearnQueueManager implements QueueManager{
             }
         }
         
-        if (!dbHelper.inTransaction()) {
-        	dbHelper.beginTransaction();
-        	// end transaction (which causes flesh writes and takes ~1s)
-        	// after ui shows user the next question. User reads question
-        	// and in the meantime ui thread does the commit - it looks like superfast to the user :)
-        	handler.postDelayed(new Runnable() {
-				@Override
-				public void run() {
-					if (dbHelper.inTransaction())
-						dbHelper.endSuccessfullTransaction();
-				}
-			},100); // 100ms so the handler gets invoked after ui updates itself
+        Item nextItem = null;
+        if(learnQueue.size() > 0){
+            /* Return the clone to resolve the reference problem
+             * i.e. updating the item will also item the one
+             * in the queue */
+            nextItem = learnQueue.get(0).clone();
         }
-        
-        dbHelper.addOrReplaceItem(item);
+
+        return nextItem;
+    }
+
+
+	public void updateInBackground(Item item) {
+		if (!dbHelper.inTransaction()) {
+			dbHelper.beginTransaction();
+		}
+
+		itemClics++;
+		long t0 = System.currentTimeMillis();
+		dbHelper.addOrReplaceItem(item);
+		
+		if (dbHelper.inTransaction()){
+			dbHelper.endSuccessfullTransaction();
+		}
+
+		timeEarned += (System.currentTimeMillis() - t0);
+
         /* Fill up the queue to its queue size */
         int maxNewId = getMaxQueuedItemId(true);
         int maxRevId = getMaxQueuedItemId(false);
@@ -267,16 +281,7 @@ class LearnQueueManager implements QueueManager{
                 }
             }
         }
-        if(learnQueue.size() > 0){
-            /* Return the clone to resolve the reference problem
-             * i.e. updating the item will also item the one
-             * in the queue */
-            return learnQueue.get(0).clone();
-        }
-        else{
-            return null;
-        }
-    }
+	}
 
     /* 
      * Replace the item in the queue with the same ID and
@@ -336,6 +341,15 @@ class LearnQueueManager implements QueueManager{
             }
         }
         learnQueue = null;
+        
+        // write stats
+		SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(mContext);
+		itemClics += settings.getInt("itemClicks", 0);
+		timeEarned += settings.getLong("timeEarned", 0);
+		SharedPreferences.Editor editor = settings.edit();
+		editor.putInt("itemClicks",  itemClics);
+		editor.putLong("timeEarned", timeEarned);
+		editor.commit();
     }
 
     private int getMaxQueuedItemId(boolean isNewItem){

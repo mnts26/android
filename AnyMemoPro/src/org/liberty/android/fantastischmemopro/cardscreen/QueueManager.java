@@ -32,6 +32,8 @@ interface QueueManager{
     Item getFirstItemFromQueue();
     /* give the next item according to current one */
     public Item updateAndNext(Item item);
+    /* update stats for the item and if there is space in queue - full it with new questions */
+    public void updateInBackground(Item item);
     /* Update the item with the same id */
     public boolean updateQueueItem(Item item);
     /* Insert to the queue based on position, -1 means the end of queue */
@@ -40,6 +42,7 @@ interface QueueManager{
     public void close();
     /* Get statistics info*/
     public int[] getStatInfo();
+    
 }
 
 

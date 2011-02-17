@@ -47,9 +47,11 @@ import android.view.View.OnClickListener;
 import android.view.Display;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.content.res.Configuration;
 import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
+import android.text.method.DateTimeKeyListener;
 import android.text.method.LinkMovementMethod;
 import android.text.Html;
 import android.content.Context;
@@ -62,6 +64,7 @@ public class AnyMemo extends AMActivity implements OnClickListener{
 	private Button btnEdit;
 	private Button btnExit;
 	private Button btnDownload;
+	private TextView stats; 
     private final static String TAG = "org.liberty.android.fantastischmemopro.AnyMemo";
     /** Called when the activity is first created. */
     @Override
@@ -74,10 +77,12 @@ public class AnyMemo extends AMActivity implements OnClickListener{
         btnEdit= (Button)this.findViewById(R.id.main_edit_button);
         btnDownload = (Button)this.findViewById(R.id.main_download_button);
         btnExit = (Button)this.findViewById(R.id.main_exit_button);
+        stats = (TextView) this.findViewById(R.id.stats);
         btnNew.setOnClickListener(this);
         btnEdit.setOnClickListener(this);
         btnDownload.setOnClickListener(this);
         btnExit.setOnClickListener(this);
+        stats.setOnClickListener(this);
 
         
         this.dbName = settings.getString("dbname", null);
@@ -188,6 +193,11 @@ public class AnyMemo extends AMActivity implements OnClickListener{
     		startActivity(myIntent);
             
     	}
+    	
+    	if (v == stats) {
+    		showStats();    		
+    	}
+    	
     	if(v == btnExit){
     		finish();
     	}
@@ -235,7 +245,29 @@ public class AnyMemo extends AMActivity implements OnClickListener{
         }
     }
     
-    public void onResume(){
+    private void showStats() {
+    	SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(this);
+		int itemClics = settings.getInt("itemClicks", 0);
+		long timeEarned = settings.getLong("timeEarned", 0);
+		long estimatedEarned = itemClics * 2500;
+		
+		String text = String.format("Items: %d\nTime: %s\nEst: %s", 
+				itemClics, 
+				getElapsedTime(timeEarned/1000), 
+				getElapsedTime(estimatedEarned/1000));
+		
+		Toast.makeText(this, text, Toast.LENGTH_LONG).show();
+	}
+    
+    private String getElapsedTime(long totalSeconds) {
+		long hours = totalSeconds / 3600;
+		long minutes = (totalSeconds % 3600) / 60;
+		long seconds = totalSeconds % 60;
+		
+		return String.format("%d:%d:%d", hours, minutes, seconds);
+    }
+
+	public void onResume(){
     	super.onResume();
     	if(returnValue == 1){
     		SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(this);
