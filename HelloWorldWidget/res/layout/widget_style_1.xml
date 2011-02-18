@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:background="#00FF00" android:orientation="vertical" android:layout_height="72dp" android:layout_width="72dp" android:id="@+id/LinearLayout1">
+    <ImageView android:layout_height="fill_parent" android:layout_width="fill_parent" android:scaleType="centerCrop" android:id="@+id/imageWidget" android:src="@drawable/catsmile"></ImageView>
+    <TextView android:layout_height="fill_parent" android:id="@+id/textWidget" android:textColor="#000000" android:text="Test" android:layout_width="fill_parent" android:visibility="visible"></TextView>
+</LinearLayout>
